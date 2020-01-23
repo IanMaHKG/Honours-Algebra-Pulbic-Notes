@@ -1,0 +1,192 @@
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+ 
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,scrextend}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{adjustbox}
+
+\theoremstyle{definition}
+\newtheorem{definition}{DEFINITION}[subsection]
+
+
+\pagestyle{fancy}
+
+\let\newproof\proof
+\renewenvironment{proof}{\begin{addmargin}[1em]{0em}\begin{newproof}}{\end{newproof}\end{addmargin}\qed}
+
+\newtheorem{theorem}{THEOREM}[subsection]
+
+\newcommand{\uline}[1]{\rule[0pt]{#1}{0.4pt}}
+\usepackage{tcolorbox}
+\tcbuselibrary{theorems}
+
+\newtcbtheorem[number within=section]{mytheo}{Theorem}%
+{colback=red!5,colframe=red!35!black,fonttitle=\bfseries}{th}
+\newtheorem{lemma}{LEMMA}[subsection]
+\newtheorem{prop}{PROPOSITION}[subsection]
+\newtheorem{corollary}{COROLLARY}[subsection]
+ 
+\lhead{Honours Differential Equations}
+\rhead{Cheat Sheet}
+
+\title{Honours Algebra \\ Quick Notes}
+\author{Ian S.W. Ma}
+\date{}
+
+ 
+ 
+\begin{document}
+\maketitle
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+
+\section{Vector Spaces}
+
+% Section 1.1
+\subsection{Solution of Simultianeous Linear Equations}
+Assume \(F = \mathbb{Q},\mathbb{R} \text{ or } \mathbb{C} \), where $a_{ij},b_i \in F$, then
+\[
+    \sum_{j=1}^m{a_{ij}x_j} = b_i \quad \forall i \in [1,n]:i \in \mathbb{Z}
+\]
+is a \textbf{system of linear Equations}
+
+\begin{itemize}
+    \item if all $b$'s are $0$ then the system is \textbf{homogenous}
+    \item $L = \{x_1,...,x_m\}$ is the \textbf{solution set} of Equations
+\end{itemize}
+
+
+% Section 1.2
+\subsection{Fields and Vector Spaces}
+
+\begin{definition}
+    \(\)\newline
+    \begin{enumerate}
+        \item
+              A \textbf{field} $F$ is a set with functions:
+              \begin{itemize}
+                  \item \textbf{addition} $= +:F\times F \rightarrow F; (\lambda,\mu)\mapsto\lambda+\mu$
+                  \item \textbf{multiplication} $= \cdot:F\times F \rightarrow F; (\lambda,\mu)\mapsto\lambda\mu$
+              \end{itemize}
+              such that $(F,+)$ ans $(F\backslash\{0\},\cdot)$ are abelian groups, with:
+              $$\lambda(\mu + \nu) = \lambda\mu + \lambda\nu \in F \quad \forall \lambda,\mu,\nu\in F$$
+              The neutral elements are called $0_F,1_F$, in particular for all $\lambda,\mu\in F$
+              \begin{itemize}
+                  \item $\lambda + \mu = \mu + \lambda \in F$
+                  \item $\lambda \cdot \mu = \mu \cdot \lambda \in F$
+                  \item $\lambda + 0_F = \lambda \in F$
+                  \item $\lambda\cdot 1_F = \lambda \in F$
+              \end{itemize}
+              For all $\lambda \in F$ there exists $-\lambda\in F$ such that $\lambda + (-\lambda) = 0_F \in F$\\
+              For all $\lambda \neq 0 \in F$ tehre exists $\lambda^{-1}\neq 0 \in F$ such that $\lambda(\lambda^{-1}) = 1_F\in F$
+              \newpage\item
+              A \textbf{vector space} $V$ \textbf{over a field} $F$ is  a pair consisting of an abelian group $V = (V,\dot{+})$ and a mapping
+              $$F\times V \rightarrow V; (\lambda,\overrightarrow{v})$$
+              such that for all $\lambda,\mu\in F$ and $\overrightarrow{v},\overrightarrow{w}\in V$ the following identities hold:
+              \begin{itemize}
+                  \item $\lambda(\overrightarrow{v}+\overrightarrow{w}) = \lambda\overrightarrow{v} + \lambda\overrightarrow{w}$ \textbf{Distributive Law}
+                  \item $(\lambda+\mu)\overrightarrow{v} = \lambda\overrightarrow{v} + \mu\overrightarrow{v}$ \textbf{Distributive Law}
+                  \item $\lambda(\mu\overrightarrow{v}) = (\lambda\mu)\overrightarrow{v}$ \textbf{Associativity Law}
+                  \item $1_F\overrightarrow{v} = \overrightarrow{v}$
+              \end{itemize}
+    \end{enumerate}
+\end{definition}
+\begin{lemma}
+    If $V$ is a vector space and $\overrightarrow{v} \in V$ then $0\overrightarrow{v} = \overrightarrow{0}$
+\end{lemma}
+\begin{lemma}
+    If $V$ is a vector space and $\overrightarrow{v} \in V$ then $(-1)\overrightarrow{v} = -\overrightarrow{v}$
+\end{lemma}
+\begin{lemma}
+    If $V$ is a vector space over a field $F$ then $\lambda\overrightarrow{0} = \overrightarrow{0} \quad \forall \lambda\in F$
+\end{lemma}
+
+% Section 1.3
+\subsection{Product of Sets and of Vector Spaces}
+\begin{itemize}
+    \item
+          \textbf{Cartesian product} of sets: $X_1 \times ... \times X_n := \{(x_1,...,x_n):x_i\in X_i \text{ for } 1 \leq i \leq n\}$, an element of this product is known as a product n-tuples.\newline
+\end{itemize}
+There are special mappings called \textbf{projections} for a cartesian product
+\[\begin{split}
+        \text{pr}_i: X_i\times ... \times X_n &\rightarrow X_i\\
+        (x_i,...,x_n) &\mapsto x_i
+    \end{split}\]
+The cartesian product of $n$ copies of a set $X$ is written in short as $X^n$\\
+
+$\forall n,m \geq 0$, $X^n\times X^m\xrightarrow{\sim} X^{n+m}; ((x_1,...,x_n),(x_{n+1},...,x_{n+m}))\mapsto(x_1,...,x_n,x_{n+1},x_{n+m})$
+
+% Section 1.4
+\subsection{Vector Subspaces}
+\begin{definition}
+    A subset $U$ of a vector space $V$ is called a \textbf{vector subspace} or \textbf{subspace} if $U$ contains the zero vector ($\overrightarrow{0}$) and whenever $\overrightarrow{u},\overrightarrow{v}$ and $\lambda \in F$ we have $\overrightarrow{u}+\overrightarrow{v}\in U$ and $\lambda\overrightarrow{u}\in U$
+\end{definition}
+\begin{prop}
+    Let $T$ be a subset od vector space $V$ over a field $F$. Then amongst all vector subspaces of $V$ that include $T$ there is a smallest vector subspace
+    $$\langle T \rangle = \langle T \rangle_F \subseteq V$$
+\end{prop}
+\begin{definition}
+    A subset $S$ of a vector space $V$ is called a \textbf{generating set} of a $V$ if its span is all of the vector space. A vector space that has a finite generating set is \textbf{finitely generated}
+\end{definition}
+\begin{definition}
+    Check Definition 1.4.9 on Iain's(Not me I am Ian) note I dun think it's English
+\end{definition}
+
+% Section 1.5
+\newpage
+\subsection{Linear Independence and Bases}
+\begin{definition}
+    A subset $L = \{\overrightarrow{v_1},...,\overrightarrow{v_n}\}$ of a vector subspace $V$ is \textbf{linearly independent} if for all arbitrary scalars $\alpha_1, ..., \alpha_n \in F$:
+    $$\sum_{i=1}^n{\alpha_i\overrightarrow{v_i}} = 0 \rightarrow \alpha_1 = ... = \alpha_n = 0$$
+\end{definition}
+\begin{definition}
+    A subset $L = \{\overrightarrow{v_1},...,\overrightarrow{v_n}\}$ of a vector subspace $V$ is \textbf{linearly dependent} if it's not \textbf{linearly independent}, whcih mean there exist some $\alpha_j \in \{a_1, ..., a_n\}, \alpha_j \neq 0$ such that  $$\sum_{i=1}^n{\alpha_i\overrightarrow{v_i}} = 0$$
+\end{definition}
+\begin{definition}
+    A \textbf{basis of a vector space} $B$ of a vector space $V$ is a linearly independent generating set in $V$
+\end{definition}
+\begin{definition}
+    Let $F$ be a field, $V$ a vector space over $F$ and $\overrightarrow{v_1},...,\overrightarrow{v_r} \in V$ vectors. The \textit{family} $(\overrightarrow{v_i})_{1\leq i\leq r}$ is a basis of $V$ if and only if the following "\textit{evaluation}"
+    \[
+        \begin{split}
+            \Phi : F^r &\rightarrow V\\
+            (\alpha_1,...,\alpha_r) &\mapsto \alpha_1\overrightarrow{v}_1 + ... + \alpha_r\overrightarrow{v}_r
+        \end{split}
+    \]
+    is a bijection
+\end{definition}
+\begin{definition}
+    The following for a subset $E$ of a vector space $V$ are equivalent:
+    \begin{itemize}
+        \item Our subset $E$ is a basis, ie. a linearly independent generating set;
+        \item Our subset $E$ is a minimal among all generating sets, meaning that $E\backslash\{\overrightarrow{v}\}$ does not generate $V$
+        \item Our subset $E$ is maximal among all linearly independent subsets, meaning that $E\cup\{\overrightarrow{v}\}$ is not linearly independent for any $\overrightarrow{v} \in V$
+    \end{itemize}
+\end{definition}
+\begin{corollary}
+    Let $V$ be a finitely generated vector space over a vield $F$, then $V$ is a basis
+\end{corollary}
+\begin{theorem}
+    Let $V$ be a vector space.
+    \begin{itemize}
+        \item If $L \subset V$ is a linearly independent subset and $E$ is a minimal amongst all generating sets of our vector with $L \subseteq E$, then $E$ isn a basis.
+        \item If $L \subseteq V$ is a generating set and if $L$ is maximal amongstall linearly independent subsets of vector space with $L \subseteq E$, then $L$ is a basis.
+    \end{itemize}
+\end{theorem}
+\newpage
+\begin{theorem}
+    Let field $F$, $F$-vector space $V$ and family of vectors $(\overrightarrow{v_i})_{i\in I}$ from $V$, The following are equivalent:
+    \begin{itemize}
+        \item The family $(\overrightarrow{v_i})_{i\in I}$ is a basis of $V$;
+        \item For each vector $\overrightarrow{v} \in V$ there is percisely one family $(a_i)_{i\in I}$ od elements of field $F$, almost all of which are zero and such that: $$\overrightarrow{v} = \sum_{i\in I} {a_i\overrightarrow{v_i}}$$
+    \end{itemize}
+\end{theorem}
+
+\end{document}
