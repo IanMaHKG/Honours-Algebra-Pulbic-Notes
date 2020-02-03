@@ -7,3 +7,6 @@ This notes is mainly aimed for quick referencing for assessements and exam used.
 ## Changelogs
 ### 23 Jan 2020
   All notes untill section 1.5 are included, except 1.4.9 on Prof. Gordon's note.
+
+### 3 Feb 2020 (Brexit Update)
+  Chapter 2 is completed. 1.4.9 still undone :(
