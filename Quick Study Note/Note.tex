@@ -381,6 +381,27 @@ We call $\textbf{M}_\mathcal{B}^\mathcal{A}(f) = _\mathcal{B}[f]_\mathcal{A}$ th
 \end{theorem}
 
 \subsection{Change of Matrix by Change of Basis}
+\begin{definition}
+    Let $\mathcal{A} = (\vect{v}_1,...,\vect{v}_n), \mathcal{B} = (\vect{w}_1,...,\vect{w}_n)$ be ordered bses of the same $F$-vector space $V$. Then the matrix representing the identity mapping with respect to the bases $_\mathcal{B}[\text{id}_V]_\mathcal{A}$ is called a \textbf{change of basis matrix}. By definition, its entries are given by the equalities $\vect{v}_j = \sum_{i=1}^n{a_{ij}\vect{w}_i}$
+\end{definition}
 
+\begin{theorem}[Change of Basis]
+    Let $V,W$ be finite dimensional vector spaces over $F$ and let $f:V \rightarrow W$ br a linear mapping. Suppose that $\mathcal{A,A'}$ are order bases of $V$ and $\mathcal{B,B'}$ are ordered bases of $W$. Then:
+    $$_\mathcal{B'}[f]_\mathcal{A'} = _\mathcal{B'}[\text{id}_W]_\mathcal{B} \circ _\mathcal{B}[f]_\mathcal{A} \circ _\mathcal{B}[\text{id}_V]_\mathcal{A'}$$
+\end{theorem}
+
+\begin{corollary}
+    Let $V$ be a finite dimensional vector space and let $f:V\rightarrow V$ be an endomorphism of $V$. Suppose that $\mathcal{A,A'}$ are ordered bases od $V$. Then 
+    $$_\mathcal{A'}[f]_\mathcal{A'} = _\mathcal{A}[\text{id}_V]_\mathcal{A'}^{-1} \circ _\mathcal{A}[f]_\mathcal{A} \circ _\mathcal{A}[\text{id}_V]_\mathcal{A'}$$
+\end{corollary}
+
+\begin{theorem}[Smith Normal Form]
+    Let $f:V\rightarrow W$ be a linear mapping between finite dimensional $F$-vector spaces. There exist an order basis $\mathcal{A}$ of $V$ and an ordered basis $\mathcal{B}$ of $W$, such that the representing matrix $_\mathcal{B}[f]_\mathcal{A}$ has zero entries everywhere except possibly on one diagonal, and along the diagonaltherer are 1's first, followed by 0's  
+\end{theorem}
+
+\begin{definition}[Trace]
+    The trace of a square matrix is defined to be the sum of its diagonal entries:
+    $$\text{tr}(A) = \sum_{i=1}^{n}{a_{ii}}$$
+\end{definition}
 
 \end{document}
