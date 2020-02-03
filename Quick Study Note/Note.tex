@@ -23,6 +23,8 @@
 \newtheorem{theorem}{THEOREM}[subsection]
 
 \newcommand{\uline}[1]{\rule[0pt]{#1}{0.4pt}}
+\newcommand{\Hom}{\text{Hom}}
+\newcommand{\Maps}{\text{Maps}}
 \usepackage{tcolorbox}
 \tcbuselibrary{theorems}
 
@@ -33,7 +35,7 @@
 \newtheorem{corollary}{COROLLARY}[subsection]
  
 \lhead{Honours Differential Equations}
-\rhead{Cheat Sheet}
+\rhead{Quick Notes}
 
 \title{Honours Algebra \\ Quick Notes}
 \author{Ian S.W. Ma}
@@ -163,8 +165,8 @@ $\forall n,m \geq 0$, $X^n\times X^m\xrightarrow{\sim} X^{n+m}; ((x_1,...,x_n),(
     is a bijection
 \end{definition}
 \begin{definition}
-    The following for a subset $E$ of a vector space $V$ are equivalent:
     \begin{itemize}
+    The following for a subset $E$ of a vector space $V$ are equivalent:An isomorphism of a vector space to itself is called \textbf{anautomorphism} of our vector space.
         \item Our subset $E$ is a basis, ie. a linearly independent generating set;
         \item Our subset $E$ is a minimal among all generating sets, meaning that $E\backslash\{\overrightarrow{v}\}$ does not generate $V$
         \item Our subset $E$ is maximal among all linearly independent subsets, meaning that $E\cup\{\overrightarrow{v}\}$ is not linearly independent for any $\overrightarrow{v} \in V$
@@ -188,5 +190,82 @@ $\forall n,m \geq 0$, $X^n\times X^m\xrightarrow{\sim} X^{n+m}; ((x_1,...,x_n),(
         \item For each vector $\overrightarrow{v} \in V$ there is percisely one family $(a_i)_{i\in I}$ od elements of field $F$, almost all of which are zero and such that: $$\overrightarrow{v} = \sum_{i\in I} {a_i\overrightarrow{v_i}}$$
     \end{itemize}
 \end{theorem}
+
+\subsection{Dimension of a vector space}
+\begin{theorem}[Fundamental Estimate of Linear Algebra]
+    No linearly independent subset of a given vector space has more elements then a generating set. Thus if $V$ is a vector space, $L \subset V$ a linearly independent subset and $E \subseteq V$ a generating set, then $|L| \leq |E|$
+\end{theorem}
+
+\begin{theorem}[Steinitz Exchange Theorem]
+    Let $V$ be a vector space, $L \subset V$ a finite linearly independent subset and $E \subseteq V$ a generating set. Then there is an injection $\phi: L \hookrightarrow E$ such that $(E \backslash \phi (L)) \cup L$ is also a generating set for $V$
+\end{theorem}
+
+\begin{lemma}[Exchange Lemma]
+    Let $V$ be a vector space, $M \subseteq V$ a linearly independent subset, adn $E \subseteq V$ a generating subset, such that $M \subseteq E$. if $\overrightarrow{w} \in V\backslash M$ is a vector not belonging to $M$ such that $M \cup \{\overrightarrow{w}\}$ is linearly independent, then there exists $\overrightarrow{e} \in E\backslash M$ such that $\{E\backslash\{\overrightarrow{e}\}\}\cup \{\overrightarrow{w}\}$ is a generating set for $V$
+\end{lemma}
+
+\begin{corollary}[Cardinality of Bases]
+    Let $V$ be a finitely generated vector space.
+    \begin{itemize}
+        \item $V$ has a finite basis
+        \item $V$ cannot have an infinite basis
+        \item Any two bases of $V$ have the same number of elements
+    \end{itemize}
+\end{corollary}
+
+\begin{definition}
+    The cardinality of one (and by Cardinality of Bases each) basis of a finitely generated vector space $V$ is called the \textbf{dimension} of $V$ and will be denoted by $\dim(V)$. If the vector space is not finitely generated, then we write $\dim(V) = \infty$ and call $V$ infinite dimensional. As usual, we will ignore the difference between infinities.
+\end{definition}
+
+\begin{corollary}[Cardinality Criterion for Bases]
+    Let $V$ be a finitely generated vector space.
+    \begin{itemize}
+        \item Each linearly independent subset $L \subset V$ has at most $\dim(V)$ elements, and if $|L|=\dim(V)$ then $L$ is actually a basis
+        \item Each generating set $E \subseteq V$ has at least $\dim(V)$ elements, and if $|E| = \dim(V)$ the $E$ is actually a basis.
+    \end{itemize}
+\end{corollary}
+
+\begin{corollary}[Dimension Estimate for Vector Subspaces]
+    A proper vector subspace of a finitedimensional vector space has itself a strictly smaller dimension.
+\end{corollary}
+
+\begin{theorem}[The Dimension Theorem]
+    Let $V$ be vectpr space containing vector subspaces $U,W \subseteq V$. Then
+    $$\dim(U + W) + \dim(U\cap W) = \dim(U) + \dim(W)$$
+\end{theorem}
+
+\subsection{Linear Mappings}
+\begin{definition}
+    Let $V,W$ be a vector spaces over a field $F$. A mapping $f: V \rightarrow W$ is called \textbf{linear} or more percisely $\mathbf{F}\textbf{-linearly}$ or even a \textbf{homomorphism of $F$-vector spaces} if for all $\overrightarrow{v}_1, \overrightarrow{v}_2 \in V$ and $\lambda \in F$ we have \[\begin{split}
+        f(\overrightarrow{v}_1 + \overrightarrow{v}_2) &= f(\overrightarrow{v}_1) + f(\overrightarrow{v}_2)\\
+        f(\lambda\overrightarrow{v}_1) &= \lambda f(\overrightarrow{v}_1) 
+    \end{split}\]
+\end{definition}
+
+\begin{itemize}
+    \item A bijective libear mapping is called as \textbf{isomorphism} of vector spaces. If there is an isomorphism bwetween two vector spaces we say them \textbf{isomorphic}.
+    \item A \textbf{homomorphism} from one vector space to itself is called anendomorphismof our vector space.
+    \item An isomorphism of a vector space to itself is called \textbf{anautomorphism} of our vector space.
+\end{itemize}
+
+\begin{definition}
+    A point that is sent to itself br a mapping is called a \textbf{fixed point} of the mapping.
+    Given a mapping $f: X \rightarrow X$, we donote the set of fixed points by $$X^f = \{x \in X: f(x) = x\}$$
+\end{definition}
+
+\begin{definition}
+    Two vector subspaces $V_1,V_2$ of a vector space $V$ are called \textbf{complementary} of addition defines a bijection $V_1 \times V_2 {\stackrel{\sim}{\rightarrow}} V$
+\end{definition}
+
+\begin{theorem}[The Classification of Vector Spaces by their Dimension]
+    Let $n\in \mathbb{N}$. Then a vector space over a field $F$ is isomorphic to $F^n$ i.f.f it has dimension $n$
+\end{theorem}
+
+\begin{lemma}[Linear Mappings and Bases]
+    Let $V,W$ be vector spaces over $F$ and let $B \subset V$ be a basis. Then restriction of a mapping gives a bijection
+    \[\begin{split}
+        \Hom_F(V,W) = \Hom(V,W) \subseteq\Maps(V,W)
+    \end{split}\]
+\end{lemma}
 
 \end{document}

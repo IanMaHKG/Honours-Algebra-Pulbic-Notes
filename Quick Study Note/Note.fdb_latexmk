@@ -1,8 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1579820623 "/home/ian/Documents/Honour_Algebra/Note/Note.tex" "/home/ian/Documents/Honour_Algebra/Note/Note.pdf" "Note" 1579820748
+["pdflatex"] 1580747952 "Note.tex" "/home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.pdf" "Note" 1580747952
   "/etc/texmf/web2c/texmf.cnf" 1579718069 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/ian/Documents/Honour_Algebra/Note/Note.aux" 1579820624 675 2afefd88d59de99476192897a0114635 ""
-  "/home/ian/Documents/Honour_Algebra/Note/Note.tex" 1579820748 9312 9c3873bb82374227ca00294420fbaccc ""
+  "/home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.aux" 1580747952 851 0b7221b3288d57373c80ee26fdd2bfd5 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -11,6 +10,8 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1480098698 908 2921f8a10601f252058503cc6570e581 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1480098698 940 228d6584342e91276bf566bcf9716b83 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1480098701 1324 c910af8c371558dc20f2d7822f66fe64 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm" 1480098701 1344 8a0be4fe4d376203000810ad4dc81558 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm" 1480098701 1332 1fde11373e221473104d6cc5993f046e ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1480098701 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1480098701 1524 4414a8315f39513458b80dfc63bff03a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1480098701 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -148,11 +149,11 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1520210507 32485 c64754543d8ac501bea6e75e209ea521 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1579808462 2700761 ac0584cc9514ab21918550a6948c4ee2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1579808473 4130727 efb239db839bb6faf08fd573b47db86e ""
-  "Note.aux" 1579820624 675 2afefd88d59de99476192897a0114635 ""
-  "Note.tex" 1579820748 9312 9c3873bb82374227ca00294420fbaccc ""
+  "Note.aux" 1580747952 851 0b7221b3288d57373c80ee26fdd2bfd5 ""
+  "Note.tex" 1580747952 14050 517ad223c2ab5d0564ed88ea179c9cb5 ""
   (generated)
+  "/home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.pdf"
   "Note.aux"
-  "/home/ian/Documents/Honour_Algebra/Note/Note.pdf"
-  "/home/ian/Documents/Honour_Algebra/Note/Note.log"
-  "Note.log"
+  "/home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.log"
   "Note.pdf"
+  "Note.log"
