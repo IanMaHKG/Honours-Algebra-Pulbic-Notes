@@ -26,6 +26,7 @@
 \newcommand{\Hom}{\text{Hom}}
 \newcommand{\Maps}{\text{Maps}}
 \newcommand{\image}{\text{im}}
+\newcommand{\Mat}{\text{Mat}}
 % \newcommand{\vector}[1]{\ensuremath{\overrightarrow{#1}}}
 \usepackage{tcolorbox}
 \tcbuselibrary{theorems}
@@ -293,5 +294,34 @@ $\forall n,m \geq 0$, $X^n\times X^m\xrightarrow{\sim} X^{n+m}; ((x_1,...,x_n),(
 
 % Chapter 2
 \section{Linear Mappings and Matrices}
+\subsection{Linear Mappings $F^m \rightarrow F^n$ and Matrices}
+\begin{theorem}[Linear mappings $F^m \rightarrow F^n$ and Matrices]
+    Let $F$ be a field and let $m,n in \mathbb{N}$ be neutral numbers. There is a nijection between the space of linear mappings $F^m \rightarrow F^n$ and the set of matrices woth $n$ rows anf $m$ columns and entries in $F$:
+    \[\begin{split}
+        \textbf{M}: \Hom_F(F^m,F^n) &\stackrel{\sim}{\rightarrow} \Mat(n \times m; F)\\
+        f &\mapsto [f]
+    \end{split}\]
+    This attaches to each linear mapping$f$ its \textbf{representing matrix} $\textbf{M}(f):=[f]$. The column of this matrux are the images under $f$ of the standard basis elements if $F^m$:
+    $$[f] = (f(\overrightarrow{e}_1)|f(\overrightarrow{e}_2)|\dots|f(\overrightarrow{e}_m))$$
+\end{theorem}
+
+\begin{definition}
+    Let $n,m,l\in \mathbb{N}$, $F$ a field and let $A \in \Mat(n\times m; F)$ and $B \in \Mat(m\times l; F)$ be matrices. The \textbf{product} $A \circ B = AB \in \Mat(n\times l; F)$ is the matrix defined by $$(AB)_{ik} = \sum_{j=1}^m{A_{ij}B_{jk}}$$
+\end{definition}
+
+\begin{theorem}[Composition of Linear Mapping and Products of Matrices]
+    Let $g:F^l \rightarrow F^m$ and $f:F^m \rightarrow F^n be linear mappings$. Then $[f \circ g] = [f] \circ [g]$
+\end{theorem}
+
+\subsection{Basic Properties of Matrices}
+\begin{definition}
+    A matrix $A$ is called \textbf{invertable} if there exist matrices such tht $BA = I$ and $AC = I$
+\end{definition}
+will define an \textbf{elementary matrix} to be any square matrix that differs from the identity matrix in at most one entry.
+\begin{definition}
+
+    % 2.2.2 done
+    
+\end{definition}
 
 \end{document}
