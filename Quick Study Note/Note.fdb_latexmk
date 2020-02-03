@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1580755279 "Note.tex" "/home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.pdf" "Note" 1580755279
+["pdflatex"] 1580764461 "Note.tex" "/home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.pdf" "Note" 1580764461
   "/etc/texmf/web2c/texmf.cnf" 1579718069 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.aux" 1580755279 1240 d4adf7c8ce8cfe3e62bff649000fe8fe ""
+  "/home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.aux" 1580764461 1446 b121156feccf865bc7a7a6990ef73f76 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -153,11 +153,11 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1520210507 32485 c64754543d8ac501bea6e75e209ea521 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1579808462 2700761 ac0584cc9514ab21918550a6948c4ee2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1579808473 4130727 efb239db839bb6faf08fd573b47db86e ""
-  "Note.aux" 1580755279 1240 d4adf7c8ce8cfe3e62bff649000fe8fe ""
-  "Note.tex" 1580755279 17037 2427d154d2aeccd5f091dea4739d06ab ""
+  "Note.aux" 1580764461 1446 b121156feccf865bc7a7a6990ef73f76 ""
+  "Note.tex" 1580764460 20758 8582fd184feaab65e6f80c95bfa83a31 ""
   (generated)
-  "/home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.log"
-  "Note.aux"
-  "Note.log"
-  "/home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.pdf"
   "Note.pdf"
+  "Note.aux"
+  "/home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.pdf"
+  "Note.log"
+  "/home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.log"
