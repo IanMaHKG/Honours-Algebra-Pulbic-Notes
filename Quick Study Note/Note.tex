@@ -25,6 +25,8 @@
 \newcommand{\uline}[1]{\rule[0pt]{#1}{0.4pt}}
 \newcommand{\Hom}{\text{Hom}}
 \newcommand{\Maps}{\text{Maps}}
+\newcommand{\image}{\text{im}}
+% \newcommand{\vector}[1]{\ensuremath{\overrightarrow{#1}}}
 \usepackage{tcolorbox}
 \tcbuselibrary{theorems}
 
@@ -63,7 +65,6 @@ is a \textbf{system of linear Equations}
     \item if all $b$'s are $0$ then the system is \textbf{homogenous}
     \item $L = \{x_1,...,x_m\}$ is the \textbf{solution set} of Equations
 \end{itemize}
-
 
 % Section 1.2
 \subsection{Fields and Vector Spaces}
@@ -243,7 +244,7 @@ $\forall n,m \geq 0$, $X^n\times X^m\xrightarrow{\sim} X^{n+m}; ((x_1,...,x_n),(
 \end{definition}
 
 \begin{itemize}
-    \item A bijective libear mapping is called as \textbf{isomorphism} of vector spaces. If there is an isomorphism bwetween two vector spaces we say them \textbf{isomorphic}.
+    \item A bijective linear mapping is called as \textbf{isomorphism} of vector spaces. If there is an isomorphism bwetween two vector spaces we say them \textbf{isomorphic}.
     \item A \textbf{homomorphism} from one vector space to itself is called anendomorphismof our vector space.
     \item An isomorphism of a vector space to itself is called \textbf{anautomorphism} of our vector space.
 \end{itemize}
@@ -264,10 +265,33 @@ $\forall n,m \geq 0$, $X^n\times X^m\xrightarrow{\sim} X^{n+m}; ((x_1,...,x_n),(
 \begin{lemma}[Linear Mappings and Bases]
     Let $V,W$ be vector spaces over $F$ and let $B \subset V$ be a basis. Then restriction of a mapping gives a bijection
     \[\begin{split}
-        \Hom_F(V,W) = \Hom(V,W) \subseteq\Maps(V,W)
+        \Hom_F(V,W) &\stackrel{\sim}{\rightarrow} \Maps(B,W)\\
+        f &\mapsto f|_B
     \end{split}\]
 \end{lemma}
 
+\begin{prop}
+    \begin{itemize}
+        \item Every injective linar mapping $f:V \hookrightarrow W$ has a \textbf{left inverse}, in other words a linear mapping $g: W \rightarrow V$ such that $g \circ f = \text{id}_V$
+        \item Every surjective linear mapping $f:V \twoheadrightarrow W$ has a \textbf{right inverse}, in other words a linear mapping $g: W \rightarrow V$ such that $g \circ f = \text{id}_W$
+    \end{itemize}
+\end{prop}
 
+\subsection{Rank-Nullity Throrem}
+\begin{definition}
+    The \textbf{image} of a linear mapping $f: V \rightarrow W$ is the subset $\image(f) = f(V) \subseteq W$. The \textbf{preimage} of the zero vector (\textbf{kernel}) of a linear mapping $f: V \rightarrow W$ is denoted by $$\ker(f) := f^{-1}(0) = \{v \in V: f(v) = 0\}$$
+    The kernel is a vector subspace if $V$
+\end{definition}
+
+\begin{lemma}
+    A linear mapping $f: V \rightarrow W$ is injective if an only if it's kernel is zero.
+\end{lemma}
+
+\begin{theorem}[Rank-Nullity Theorem]
+    Let $f: V \rightarrow W$ be a linear mapping between vector spaces, then $\dim(V) = \dim(\ker{f}) + \dim(\image(f))$
+\end{theorem}
+
+% Chapter 2
+\section{Linear Mappings and Matrices}
 
 \end{document}
