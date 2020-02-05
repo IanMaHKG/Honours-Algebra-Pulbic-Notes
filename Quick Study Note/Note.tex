@@ -404,4 +404,32 @@ We call $\textbf{M}_\mathcal{B}^\mathcal{A}(f) = _\mathcal{B}[f]_\mathcal{A}$ th
     $$\text{tr}(A) = \sum_{i=1}^{n}{a_{ii}}$$
 \end{definition}
 
+% Chapter 3
+\section{Rings and Modules}
+\subsection{Rings}
+\begin{definition}
+    A \textbf{ring} is a set with two operations $(R,+,\cdot)$ that satisfy:
+    \begin{enumerate}
+        \item $(R,+)$ is an abelian group
+        \item $(R,\cdot)$ is a \textbf{monoid}, meaning that the second operation $\cdot$: $R\times R\rightarrow R$ is assosiative and that there is an \textbf{identity element} $1 = 1_R \in R$, often called just the \textbf{identity}, with the peoperty that $1\cdot a = a \cdot 1 = a \quad\forall a \in R$
+        \item The Distributive laws hold, meaning that for all $a,b,c \in R$ \[\begin{split}
+            a\cdot (b+c) &= (a\cdot b)+(a \cdot c)\quad \textbf{addition}\\
+            (a+b) \cdot c &= (a \cdot c) + (b \cdot c) \quad \textbf{multiplication}
+        \end{split}\]
+    A ring which element is commutative, that means $a \cdot b = b \cdot a \quad \forall a,b \in R$, is a \textbf{commutative ring}
+    \end{enumerate}
+\end{definition}
+
+\begin{prop}[Divisbility by Sum]
+    A natural number is divisible by 3(respectively by 9) percisely when the sum of its digits is divisible by 3 (or 9)
+\end{prop}
+
+\begin{definition}
+    A \textbf{field} is a non-zero commutative ring $F$ in which every non-zero element $a\in F$ has an inverse $a^{-1} \in F$, that is an element $a^{-1}$ with the property that $a\cdot a^{-1} = a^{-1}\cdot a = 1$
+\end{definition}
+
+\begin{prop}
+    Let $m$ be a positive integer. The commutative ring $\mathbb{Z}/m\mathbb{Z}$ is a field i.f.f. $m$ is prime.
+\end{prop}
+
 \end{document}
