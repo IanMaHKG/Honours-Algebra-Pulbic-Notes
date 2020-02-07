@@ -11,3 +11,5 @@ This notes is mainly aimed for quick referencing for assessements and exam used.
   - Chapter 2 is completed. 1.4.9 still undone :(
 - 5 Feb 2020
   - 3.1 Done, 1.4.8 remains. Will stop here foe a while until 3.2 is being taught.
+- 7 Feb 2020
+  - Starting 3.2, Iain has started 3.3

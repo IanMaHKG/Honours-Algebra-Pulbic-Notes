@@ -11,6 +11,8 @@
 \usepackage{graphicx}
 \usepackage{adjustbox}
 
+\setlength{\parskip}{0em}
+
 \theoremstyle{definition}
 \newtheorem{definition}{DEFINITION}[subsection]
 
@@ -431,5 +433,36 @@ We call $\textbf{M}_\mathcal{B}^\mathcal{A}(f) = _\mathcal{B}[f]_\mathcal{A}$ th
 \begin{prop}
     Let $m$ be a positive integer. The commutative ring $\mathbb{Z}/m\mathbb{Z}$ is a field i.f.f. $m$ is prime.
 \end{prop}
+
+\subsection{Peoperties of Rings}
+\begin{lemma}[Mutiplying by zero and negatives]
+    Let $R$ be a ring and let $a,b \in R$. Then:
+    \begin{enumerate}
+        \item $0a = 0 = a0$
+        \item $(-a)b = -(ab) = a(-b)$
+        \item $(-a)(-b) = ab$
+    \end{enumerate}
+\end{lemma}
+
+\begin{lemma}[Rules of multiples]
+    Let $R$ be a ring, let $a,b\in R$ and $m.n \in \mathbb{Z}$. Then:
+    \begin{enumerate}
+        \item $m(a+b) = ma + mb$
+        \item $(m+n)a = ma + na$
+        \item $m(na) = (mn)a$
+        \item $m(ab) = (ma)b = a(mb)$
+        \item $(ma)(nb) = (mn)(ab)$
+    \end{enumerate}
+\end{lemma}
+
+\begin{definition}
+    Let $R$ be a ring. An element $a \in R$ is called a \textbf{unit} if it is \textbf{invertable} in $R$ or in other words \textbf{has a multiplicative inverse in} $R$, meaning that $\exists a^{-1} \in R$ such that $$aa^{-1} = 1 = a^{-1}a$$
+\end{definition}
+
+\begin{prop}
+    The set $R^{\times}$ of units in a ring $R$ forms a group under multiplication.
+\end{prop}
+
+% 3.2.10 done, Iain started 3.2 today [FRI 7 Feb]
 
 \end{document}
