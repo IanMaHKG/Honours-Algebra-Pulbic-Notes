@@ -15,3 +15,4 @@
 \contentsline {section}{\numberline {3}Rings and Modules}{8}
 \contentsline {subsection}{\numberline {3.1}Rings}{8}
 \contentsline {subsection}{\numberline {3.2}Peoperties of Rings}{9}
+\contentsline {subsection}{\numberline {3.3}Polynomials}{10}

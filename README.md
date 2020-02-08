@@ -14,3 +14,5 @@ This notes is mainly aimed for quick referencing for assessements and exam used.
 - 7 Feb 2020
   - Starting 3.2, Iain has started 3.3
   - Added Table of Content and set rules(-ish) for page numbers
+- 8 Feb 2020
+  - Notes up to 3.3 are included.

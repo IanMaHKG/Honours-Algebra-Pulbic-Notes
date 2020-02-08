@@ -5,8 +5,11 @@
 \usepackage{fancyhdr}
 \usepackage{graphicx}
 \usepackage{adjustbox}
+\usepackage{enumitem}
 
 \setlength{\parskip}{0em}
+\setlist[enumerate]{itemsep=0mm}
+\setlist[itemize]{itemsep = 0mm}
 
 \theoremstyle{definition}
 \newtheorem{definition}{DEFINITION}[subsection]
@@ -25,7 +28,11 @@
 \newcommand{\image}{\text{im}}
 \newcommand{\Mat}{\text{Mat}}
 \newcommand{\vect}[1]{\overrightarrow{#1}}
-% \newcommand{\vector}[1]{\ensuremath{\overrightarrow{#1}}}
+\newcommand{\suchthat}{\textit{ s.t. }}
+
+%Set the code name here
+\newcommand{\coursename}{Honours Algebra}
+
 \usepackage{tcolorbox}
 \tcbuselibrary{theorems}
 
@@ -35,10 +42,10 @@
 \newtheorem{prop}{PROPOSITION}[subsection]
 \newtheorem{corollary}{COROLLARY}[subsection]
  
-\lhead{Honours Differential Equations}
+\lhead{\coursename}
 \rhead{Quick Notes}
 
-\title{Honours Algebra \\ Quick Notes}
+\title{\coursename\\Quick Notes}
 \author{Ian S.W. Ma}
 \date{}
 
@@ -74,7 +81,7 @@ is a \textbf{system of linear Equations}
 \subsection{Fields and Vector Spaces}
 
 \begin{definition}
-    \(\)\newline
+    \quad
     \begin{enumerate}
         \item
               A \textbf{field} $F$ is a set with functions:
@@ -463,6 +470,66 @@ We call $\textbf{M}_\mathcal{B}^\mathcal{A}(f) = _\mathcal{B}[f]_\mathcal{A}$ th
     The set $R^{\times}$ of units in a ring $R$ forms a group under multiplication.
 \end{prop}
 
-% 3.2.10 done, Iain started 3.2 today [FRI 7 Feb]
+\begin{definition}[Zero-divisor]
+    In a ring $R$ a non-zero element $a$ is called a \textbf{zero-divisor} or \textbf{divisor of zero} if there exists a non-zero element $b$ such that either $ab = 0$ or $ba = 0$
+    $${a \neq 0 \in R, \exists b \neq 0 \in R \suchthat ab = 0 \cup ba = 0} \Rightarrow {a\text{ is a zero divisor}}$$
+\end{definition}
+
+\begin{definition}[Integral domain]
+    An \textbf{integral domain} is a non-zero commutative ring that has no zero-divisors, therefore the if $D$ is an integral domain then:
+    \begin{enumerate}
+        \item $ab = 0 \Rightarrow  a = 0$ or $b = 0$, and
+        \item $a,b\neq 0 \Rightarrow ab \neq 0$
+    \end{enumerate}
+\end{definition}
+
+\begin{prop}
+    Let $m$ be a natural number. The $\mathbb{Z}/m\mathbb{Z}$ is an integral domain i.f.f. $m$ is prime
+\end{prop}
+
+\begin{theorem}
+    Every \textbf{fnite} integral domain is a field
+\end{theorem}
+
+\subsection{Polynomials}
+\begin{definition}
+    Let $R$ be a ring. A \textbf{polnomial} over $R$ is an expression of the form
+    $$P = a_0 + a_1X + a_2X^2 + ... + a_mX^m$$
+    for some $m \in \mathbb{N}\backslash 0$ and elements $a_i \in R$ for $0 \leq i \leq m$. The set of all Polynomials over $R$ is denoted by $R[X]$. Incase $a_m$ is not zero, the polynomial $P$ has a degree of $m$, written $\text{deg}(P) = m$, where $a_m$ is the leading coefficient.\\
+    When the leading coefficient is 1 the polynomial is a \textbf{monic} polynomial, linear for $a_1$, quardratic for $a_2$, then cubic for $a_3$.
+\end{definition}
+
+\begin{definition}
+    Whith the definition in the set $R[X]$ becomes a ring called the \textbf{ring of polynomials with coefficients in $R$, or over $R$}. The zero and the indentity of $R[X]$ are the zero and identity of $R$ resp.
+\end{definition}
+
+\begin{lemma}
+    \quad
+    \begin{enumerate}
+        \item If a ring $R$ with no zero-divisors, then $R[X]$ has no zero-divisors and $\deg(PQ) = \deg(P) + \deg(Q)$ for all non-zero $P,Q\in R[X]$
+        \item If $R$ is an integral domain then so is $R[X]$
+    \end{enumerate}
+\end{lemma}
+
+\begin{theorem}[Division and Remainder]
+    Let $R$ be an integral domain and let $P,Q\in R[X]$ with $Q$. Then there exists unique $A,B\in R[X]$ such that $P = AQ + B$ and $\deg(B) < \deg(Q)$ or $B = 0$
+\end{theorem}
+
+\begin{definition}
+    Let $R$ be a commutative ring and $P\in R[X]$ a polynomial. Then the polynomial $P$ can be evaluated at the element $\lambda \in R$ to produce $P(\lambda)$ by replacing the powers of $X$ in the polynomial $P$ by the corresponding powers of $X$ in the polynomial $P$ by the corresponding powers of $\lambda$. In this way we have a mapping $R[X]\rightarrow\Maps(R,R)$\\This is the percise mathematical descrption of thinking of a polynomial as a function. An element $\lambda \in R$ is a root of $P$ is $P(\lambda) = 0$
+\end{definition}
+
+\begin{definition}
+    A field $F$ is algebraically closed of each non-constant polynomial $P \in F[X]\backslash F$ with coefficients in our field has a root in our field $F$
+\end{definition}
+
+\begin{theorem}[Fundamental Theorem of Algebra]
+    The field of complex numbers $\mathbb{C}$, is algebraically closed.
+\end{theorem}
+
+\begin{theorem}
+    If $F$ is an algebraically closed field, then every non-zero polynomial $P\in F[X]\backslash\{0\}$ \textbf{decomposes into linear factors}
+\end{theorem}
+
 
 \end{document}
