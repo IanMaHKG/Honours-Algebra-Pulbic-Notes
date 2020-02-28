@@ -1,0 +1,45 @@
+\babel@toc {english}{}
+\contentsline {chapter}{\tocchapter {Chapter}{}{Preface}}{{\fontencoding {OT1}\selectfont iii}}{chapter*.1}
+\contentsline {chapter}{\tocchapter {Chapter}{}{Acknowledgments}}{{\fontencoding {OT1}\selectfont v}}{chapter*.2}
+\contentsline {chapter}{\tocchapter {Chapter}{1}{Vector Spaces}}{1}{chapter.1}
+\contentsline {section}{\tocsection {}{1.1}{Solutions of Simultaneous Linear Equations}}{1}{section.1.1}
+\contentsline {section}{\tocsection {}{1.2}{Fields and Vector Spaces}}{5}{section.1.2}
+\contentsline {section}{\tocsection {}{1.3}{Product of Sets and of Vector Spaces}}{7}{section.1.3}
+\contentsline {section}{\tocsection {}{1.4}{Vector Subspaces}}{8}{section.1.4}
+\contentsline {section}{\tocsection {}{1.5}{Linear Independence and Bases}}{10}{section.1.5}
+\contentsline {section}{\tocsection {}{1.6}{Dimension of a Vector Space}}{14}{section.1.6}
+\contentsline {section}{\tocsection {}{1.7}{Linear Mappings}}{17}{section.1.7}
+\contentsline {section}{\tocsection {}{1.8}{Rank-Nullity Theorem}}{20}{section.1.8}
+\contentsline {chapter}{\tocchapter {Chapter}{2}{Linear Mappings and Matrices}}{23}{chapter.2}
+\contentsline {section}{\tocsection {}{2.1}{Linear Mappings $F^m\to F^n$ and Matrices}}{23}{section.2.1}
+\contentsline {section}{\tocsection {}{2.2}{Basic Properties of Matrices}}{27}{section.2.2}
+\contentsline {section}{\tocsection {}{2.3}{Abstract Linear Mappings and Matrices}}{30}{section.2.3}
+\contentsline {section}{\tocsection {}{2.4}{Change of a Matrix by Change of Basis}}{33}{section.2.4}
+\contentsline {chapter}{\tocchapter {Chapter}{3}{Rings and Modules}}{37}{chapter.3}
+\contentsline {section}{\tocsection {}{3.1}{Rings}}{37}{section.3.1}
+\contentsline {section}{\tocsection {}{3.2}{Properties of Rings}}{40}{section.3.2}
+\contentsline {section}{\tocsection {}{3.3}{Polynomials}}{43}{section.3.3}
+\contentsline {section}{\tocsection {}{3.4}{Homomorphisms, Ideals and Subrings}}{46}{section.3.4}
+\contentsline {section}{\tocsection {}{3.5}{Equivalence Relations}}{50}{section.3.5}
+\contentsline {section}{\tocsection {}{3.6}{Factor Rings and the First Isomorphism Theorem}}{52}{section.3.6}
+\contentsline {section}{\tocsection {}{3.7}{Modules and All That}}{57}{section.3.7}
+\contentsline {chapter}{\tocchapter {Chapter}{4}{Determinants and Eigenvalues Redux}}{63}{chapter.4}
+\contentsline {section}{\tocsection {}{4.1}{The Sign of a Permutation}}{63}{section.4.1}
+\contentsline {section}{\tocsection {}{4.2}{Determinants and What They Mean}}{65}{section.4.2}
+\contentsline {section}{\tocsection {}{4.3}{Characterising the Determinant}}{67}{section.4.3}
+\contentsline {section}{\tocsection {}{4.4}{Rules for Calculating with Determinants}}{69}{section.4.4}
+\contentsline {section}{\tocsection {}{4.5}{Eigenvalues and Eigenvectors}}{73}{section.4.5}
+\contentsline {section}{\tocsection {}{4.6}{Triangularisable, Diagonalisable, and the Cayley-Hamilton Theorem}}{77}{section.4.6}
+\contentsline {section}{\tocsection {}{4.7}{Google's PageRank Algorithm}}{84}{section.4.7}
+\contentsline {chapter}{\tocchapter {Chapter}{5}{Inner Product Spaces}}{93}{chapter.5}
+\contentsline {section}{\tocsection {}{5.1}{Inner Product Spaces: Definitions}}{93}{section.5.1}
+\contentsline {section}{\tocsection {}{5.2}{Orthogonal Complements and Orthogonal Projections}}{96}{section.5.2}
+\contentsline {subsection}{\tocsubsection {}{}{The Cauchy-Schwarz Inequality}}{97}{section*.9}
+\contentsline {subsection}{\tocsubsection {}{}{Gram-Schmidt Process}}{99}{section*.10}
+\contentsline {section}{\tocsection {}{5.3}{Adjoints and Self-Adjoints}}{100}{section.5.3}
+\contentsline {chapter}{\tocchapter {Chapter}{6}{Jordan Normal Form}}{109}{chapter.6}
+\contentsline {section}{\tocsection {}{6.1}{Motivation}}{109}{section.6.1}
+\contentsline {section}{\tocsection {}{6.2}{Statement of the Jordan Normal Form and Strategy of Proof}}{110}{section.6.2}
+\contentsline {section}{\tocsection {}{6.3}{OK, let's go! The proof of Jordan Normal Form}}{114}{section.6.3}
+\contentsline {section}{\tocsection {}{6.4}{Example of Jordan Normal Form}}{119}{section.6.4}
+\contentsline {section}{\tocsection {}{6.5}{A Brief Explanation of the Final Step in PageRank as an Application of the Jordan Normal Form}}{121}{section.6.5}

@@ -1,0 +1,42 @@
+\BOOKMARK [0][-]{chapter*.1}{Preface}{}% 1
+\BOOKMARK [0][-]{chapter*.2}{Acknowledgments}{}% 2
+\BOOKMARK [0][-]{chapter.1}{Chapter 1. Vector Spaces}{}% 3
+\BOOKMARK [1][-]{section.1.1}{1.1. Solutions of Simultaneous Linear Equations}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.2}{1.2. Fields and Vector Spaces}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.3}{1.3. Product of Sets and of Vector Spaces}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.4}{1.4. Vector Subspaces}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.5}{1.5. Linear Independence and Bases}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.6}{1.6. Dimension of a Vector Space}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.7}{1.7. Linear Mappings}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.8}{1.8. Rank-Nullity Theorem}{chapter.1}% 11
+\BOOKMARK [0][-]{chapter.2}{Chapter 2. Linear Mappings and Matrices}{}% 12
+\BOOKMARK [1][-]{section.2.1}{2.1. Linear Mappings FmFn and Matrices}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.2}{2.2. Basic Properties of Matrices}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.3}{2.3. Abstract Linear Mappings and Matrices}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.4}{2.4. Change of a Matrix by Change of Basis}{chapter.2}% 16
+\BOOKMARK [0][-]{chapter.3}{Chapter 3. Rings and Modules}{}% 17
+\BOOKMARK [1][-]{section.3.1}{3.1. Rings}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.2}{3.2. Properties of Rings}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.3}{3.3. Polynomials}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.4}{3.4. Homomorphisms, Ideals and Subrings}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.5}{3.5. Equivalence Relations}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.6}{3.6. Factor Rings and the First Isomorphism Theorem}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.7}{3.7. Modules and All That}{chapter.3}% 24
+\BOOKMARK [0][-]{chapter.4}{Chapter 4. Determinants and Eigenvalues Redux}{}% 25
+\BOOKMARK [1][-]{section.4.1}{4.1. The Sign of a Permutation}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.2}{4.2. Determinants and What They Mean}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.3}{4.3. Characterising the Determinant}{chapter.4}% 28
+\BOOKMARK [1][-]{section.4.4}{4.4. Rules for Calculating with Determinants}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.5}{4.5. Eigenvalues and Eigenvectors}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.6}{4.6. Triangularisable, Diagonalisable, and the Cayley-Hamilton Theorem}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.7}{4.7. Google's PageRank Algorithm}{chapter.4}% 32
+\BOOKMARK [0][-]{chapter.5}{Chapter 5. Inner Product Spaces}{}% 33
+\BOOKMARK [1][-]{section.5.1}{5.1. Inner Product Spaces: Definitions}{chapter.5}% 34
+\BOOKMARK [1][-]{section.5.2}{5.2. Orthogonal Complements and Orthogonal Projections}{chapter.5}% 35
+\BOOKMARK [1][-]{section.5.3}{5.3. Adjoints and Self-Adjoints}{chapter.5}% 36
+\BOOKMARK [0][-]{chapter.6}{Chapter 6. Jordan Normal Form}{}% 37
+\BOOKMARK [1][-]{section.6.1}{6.1. Motivation}{chapter.6}% 38
+\BOOKMARK [1][-]{section.6.2}{6.2. Statement of the Jordan Normal Form and Strategy of Proof}{chapter.6}% 39
+\BOOKMARK [1][-]{section.6.3}{6.3. OK, let's go! The proof of Jordan Normal Form}{chapter.6}% 40
+\BOOKMARK [1][-]{section.6.4}{6.4. Example of Jordan Normal Form}{chapter.6}% 41
+\BOOKMARK [1][-]{section.6.5}{6.5. A Brief Explanation of the Final Step in PageRank as an Application of the Jordan Normal Form}{chapter.6}% 42
