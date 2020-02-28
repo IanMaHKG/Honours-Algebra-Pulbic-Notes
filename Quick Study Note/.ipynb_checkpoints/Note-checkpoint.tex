@@ -613,30 +613,6 @@ We call $\textbf{M}_\mathcal{B}^\mathcal{A}(f) = _\mathcal{B}[f]_\mathcal{A}$ th
 
 % Chap 3.5
 \subsection{Equivalece Relations}
-\begin{definition}
-    A \textbf{relation} $R$ on a set $X$ is a subset $R \subseteq X \times X$. In this context, adn only in theis context, we write $xRy$ instead of $(x,y) \in R$. $R$ is an \textbf{equivalence relation} on $X$ when for all $x,y,z \in X$ the following holds:
-    \begin{enumerate}
-        \item \textbf{Reflexivity}: $xRx$
-        \item \textbf{Symmetry}: $xRy \Leftrightarrow yRx$
-        \item \textbf{Transitivity}: $(xRy \cap yRx) \rightarrow xRz$
-    \end{enumerate}
-\end{definition}
-
-\begin{definition}
-    Suppose that $\sim$ is an equivalence relation on a set $X$. For $x \in X$ the set $E(x) := \{z \in X: z \sim x\}$ is called the \textbf{equivalence class of $x$}. A subset $E \subseteq X$ is called an \textbf{equivalence class} for our equivalence relation if there is an $x \in X$ for which $E = E(x)$. An element of an equivalence relation is called a \textbf{representative} of the class. A subset $Z \subseteq X$ contains percisely one element from each equivalenceclass is called a \textbf{system of representatives} for the equivalence relation.
-\end{definition}
-
-\begin{definition}
-    Given an equivalence relation $\sim$ on the set $X$ we will denote the set of equivalence classes, which is a subset of the power set $\mathcal{P}(X)$, by $$(X/\sim) := \{E(x):x\in X\}$$
-\end{definition}
-
-\begin{definition}
-    $g:(X/\sim) \rightarrow Z$ is \textbf{well-defined} if $\exists$ a mapping $f:X \rightarrow Z$ such that $f$ has the peoperty $x \sim y \rightarrow f(x) = f(y) \cap g = \bar{f}$ 
-\end{definition}
-
-
-% Chap 3.6
-\subsection{Factor Rings and the First Isomorphism Theorem}
 
 
 \end{document}

@@ -1,7 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1581269408 "Note.tex" "/home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.pdf" "Note" 1581269409
+["pdflatex"] 1582903955 "/home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.tex" "/home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.pdf" "Note" 1582903955
   "/etc/texmf/web2c/texmf.cnf" 1579718069 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.aux" 1581269409 1951 d0dcd64b7f1256ff74a7a679bea74cca ""
+  "/home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.aux" 1582903955 2065 e69af47b60d589687da4febbe04c5f9a ""
+  "/home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.tex" 1582903952 33350 acfd74ac357a1d62e0fb07d50b6d079b ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -157,13 +158,13 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1520210507 32485 c64754543d8ac501bea6e75e209ea521 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1579808462 2700761 ac0584cc9514ab21918550a6948c4ee2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1579808473 4130727 efb239db839bb6faf08fd573b47db86e ""
-  "Note.aux" 1581269409 1951 d0dcd64b7f1256ff74a7a679bea74cca ""
-  "Note.tex" 1581269408 31727 d9af156c1a2cf26e592055a2d8b41a2e ""
-  "Note.toc" 1581269409 1473 8ae9f608b4bb00f845b979dc8639d542 ""
+  "Note.aux" 1582903955 2065 e69af47b60d589687da4febbe04c5f9a ""
+  "Note.tex" 1582903952 33350 acfd74ac357a1d62e0fb07d50b6d079b ""
+  "Note.toc" 1582903955 1569 8222e6b5b075d8bf7b567dc076785648 ""
   (generated)
-  "Note.aux"
   "/home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.pdf"
+  "/home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.log"
+  "Note.toc"
   "Note.pdf"
   "Note.log"
-  "Note.toc"
-  "/home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.log"
+  "Note.aux"
