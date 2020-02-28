@@ -18,3 +18,8 @@ This notes is mainly aimed for quick referencing for assessements and exam used.
   - Notes up to 3.3 are included.
 - 9 Feb 2020
   - Content up to 3.4 are completed.
+- 17 Feb 2020
+  - No update, Watch Dogs 2 is too good.
+- 28 Feb 2020
+  - 3.5 done. Will catch update to 4.1 by the Sunday.
+  - Added LaTeX form Iain, but need to deal with some errors.
