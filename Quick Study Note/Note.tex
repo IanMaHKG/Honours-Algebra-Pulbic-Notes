@@ -637,6 +637,24 @@ We call $\textbf{M}_\mathcal{B}^\mathcal{A}(f) = _\mathcal{B}[f]_\mathcal{A}$ th
 
 % Chap 3.6
 \subsection{Factor Rings and the First Isomorphism Theorem}
+\begin{definition}
+    Let $R$ be a ring, $I \trianglelefteq R$ be an ideal in ring $R$. The set $$x + I = \{x+i:i\in I\}\subseteq R$$ is a coset of $I$ in $R$ or the coset of $x$ with respect to $I$ in $R$
+\end{definition}
 
+\begin{definition}
+    Let $R$ be a ring, $I \trianglelefteq R$ an ideal, and $\sim$ the equivalence relation defined by $x \sim y \Leftrightarrow x - y \in I$. Then $R/I$, the factor ring of $R$ by $I$ or the quotient of $R$ by $I$, is the set $(R/ \sim)$ of cosets of $I$ in $R$.
+\end{definition}
+
+\begin{theorem}
+    Let $R$ be a ring and $I \trianglelefteq R$ and ideal. Then $R/I$ is a ring, where the operation of additionis defined by
+    $$(x+I)+(y+I) = (x+y) + I \quad \forall x, y \in R$$
+    and multiplication is defined by
+    $$(x + I)\dot(y+I) = xy + I \quad \forall x,y \in R$$
+\end{theorem}
+
+\begin{theorem}[First Isomorphism Theorem for Rings]
+    Let $R$ and $S$ be rings. Then every ring homomorphism $f:R\longrightarrow S$ induces a ring isomorphism
+    $$\bar{f}:R/\ker f \stackrel{\sim}{\rightarrow} \text{im} f$$
+\end{theorem}
 
 \end{document}
