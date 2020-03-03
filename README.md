@@ -21,5 +21,7 @@ This notes is mainly aimed for quick referencing for assessements and exam used.
 - 17 Feb 2020
   - No update, Watch Dogs 2 is too good.
 - 28 Feb 2020
-  - 3.5 done. Will catch update to 4.1 by the Sunday.
+  - 3.5 done. Will catch update to 4.1 by the Sunday. (Sorry I didnt :( )
   - Added LaTeX form Iain, but need to deal with some errors.
+- 3 Mar 2020
+  - 3 done.
