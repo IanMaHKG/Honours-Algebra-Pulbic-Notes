@@ -238,6 +238,11 @@ INPUT /opt/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /opt/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
 INPUT /opt/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmti8.tfm
 INPUT /opt/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
+INPUT /opt/texlive/2019/texmf-dist/tex/latex/amsfonts/ueuf.fd
+INPUT /opt/texlive/2019/texmf-dist/tex/latex/amsfonts/ueuf.fd
+INPUT /opt/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm10.tfm
+INPUT /opt/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm10.tfm
+INPUT /opt/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm7.tfm
 INPUT /afs/inf.ed.ac.uk/user/s17/s1743566/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.aux
 INPUT /opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
@@ -251,5 +256,6 @@ INPUT /opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 INPUT /opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT /opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
+INPUT /opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb
 INPUT /opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 INPUT /opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb

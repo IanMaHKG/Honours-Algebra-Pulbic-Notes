@@ -697,7 +697,7 @@ We call $\textbf{M}_\mathcal{B}^\mathcal{A}(f) = _\mathcal{B}[f]_\mathcal{A}$ th
     A non-empty subset $M'$ of an $R$-module $M$ is a submodule if $M'$ is an $R$-module with respect to the operations of the $R$-module $M$ restricted to $M'$
 \end{definition}
 
-\begin{prop}[Test fopr a submodule]
+\begin{prop}[Test for a submodule]
     Let $R$ be a ring and $M$ an $R$-module. A subset $M'$ of $M$ is a submodule i.f.f.
     \begin{enumerate}
         \item $0_M \in M'$
@@ -748,4 +748,23 @@ We call $\textbf{M}_\mathcal{B}^\mathcal{A}(f) = _\mathcal{B}[f]_\mathcal{A}$ th
     Let $R$ be a ring and let $M,N$ be $R$-modules. Then every $R$-homomorphism $f:M/\ker f \stackrel{\sim}{\rightarrow} \image f$
 \end{theorem}
 
+
+% Ch 4
+\section{Determinants and Eigenvalues Redux}
+\subsection{The sign of a permutation}
+\begin{definition}
+    The group of all permutations of the set $\{1,2,...,n\}$, also known as bijections from $\{1,2,...,n\}$ to itself, is denoted by $\mathfrak{S_n}$ and called the $n$\textbf{-th symmetric group}. It is a group under composition and it has $n!$ elements.\\
+    A transposition is a permutation that swaps two elements of the set and leaves all the others unchanged.
+\end{definition}
+
+\begin{definition}
+    An inversion of a permutation $\sigma \in \mathfrak{S}_n$ is  apair $(i,j)$ such that $1 \leq i < j \leq n$ and $\sigma(i) > \sigma(j)$. The number of inversions of the permutation $\sigma$ is called the length of $\sigma$ ans written $l(\sigma)$. In formulas:
+    $$l(\sigma) = |\{(i,j): i < j \text{ but } \sigma(i) > \sigma(j)\}|$$
+    The sign of $\sigma$ is defined to be the parity of the permutations of $\sigma$. In formulas:
+    $$\text{sgn}(\sigma) = (-1)^{l(\sigma)}$$
+\end{definition}
+
+\begin{lemma}[Multiplicity of the sign]
+    % TODO
+\end{lemma}
 \end{document}

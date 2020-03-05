@@ -25,3 +25,5 @@ This notes is mainly aimed for quick referencing for assessements and exam used.
   - Added LaTeX form Iain, but need to deal with some errors.
 - 3 Mar 2020
   - 3 done.
+- 5 Mar 2020
+  - Starting Chapter 4

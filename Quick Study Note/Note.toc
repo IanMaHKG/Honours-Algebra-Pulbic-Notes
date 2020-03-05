@@ -20,3 +20,5 @@
 \contentsline {subsection}{\numberline {3.5}Equivalece Relations}{12}% 
 \contentsline {subsection}{\numberline {3.6}Factor Rings and the First Isomorphism Theorem}{12}% 
 \contentsline {subsection}{\numberline {3.7}Modules and All That}{13}% 
+\contentsline {section}{\numberline {4}Determinants and Eigenvalues Redux}{15}% 
+\contentsline {subsection}{\numberline {4.1}The sign of a permutation}{15}% 

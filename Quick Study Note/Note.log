@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.6)  3 MAR 2020 22:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.6)  5 MAR 2020 16:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -534,20 +534,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--137
 Package amsmath Warning: Cannot use `split' here;
 (amsmath)                trying to recover with `aligned' on input line 345.
 
-[6] [7] [8] [9] [10] [11] [12] [13] [14] (/afs/inf.ed.ac.uk/user/s17/s1743566/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.aux) ) 
+[6] [7] [8] [9] [10] [11] [12] [13]
+LaTeX Font Info:    Try loading font information for U+euf on input line 756.
+ (/opt/texlive/2019/texmf-dist/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+) [14] [15] (/afs/inf.ed.ac.uk/user/s17/s1743566/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.aux) ) 
 Here is how much of TeX's memory you used:
- 14979 strings out of 492623
- 287526 string characters out of 6096638
+ 14992 strings out of 492623
+ 287773 string characters out of 6096638
  374481 words of memory out of 5000000
- 18582 multiletter control sequences out of 15000+600000
- 14690 words of font info for 55 fonts, out of 8000000 for 9000
+ 18590 multiletter control sequences out of 15000+600000
+ 15398 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,27n,77p,925b,402s stack positions out of 5000i,500n,10000p,200000b,80000s
-</opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "/afs/inf.ed.ac.uk/user/s17/s1743566/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.pdf" (15 pages, 201826 bytes).
+</opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></opt/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "/afs/inf.ed.ac.uk/user/s17/s1743566/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.pdf" (16 pages, 206684 bytes).
 PDF statistics:
- 112 PDF objects out of 1000 (max. 8388607)
- 80 compressed objects within 1 object stream
+ 119 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
