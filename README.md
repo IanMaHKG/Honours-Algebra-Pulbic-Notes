@@ -27,3 +27,5 @@ This notes is mainly aimed for quick referencing for assessements and exam used.
   - 3 done.
 - 5 Mar 2020
   - Starting Chapter 4
+- 6 Mar 2020
+  - Def. 4.1.7 remaiin for 4.1
