@@ -769,4 +769,26 @@ We call $\textbf{M}_\mathcal{B}^\mathcal{A}(f) = _\mathcal{B}[f]_\mathcal{A}$ th
     For each $n \in \mathbb{N}$ the sign of a permutation produces a group homomorphism $\textbf{sgn}: \mathfrak{S}_n \rightarrow \{+1,-1\}$ from the symmetric group ton the two-element group of signs. In formulas:
     $$\sgn(\sigma\tau) = \sgn(\sigma)\sgn(\tau) \quad \forall \sigma,\tau\in \mathfrak{S}_n$$
 \end{lemma}
+
+\begin{definition}
+    For $n \in \mathbb{N}$, the set of even permutations in $\mathfrak{S}_n$ forms a subgroup of $\mathfrak{S}_n$ because it is the kernel of the group homomorphism $\sgn:\mathfrak{S}_n \rightarrow \{+1,-1\}$. This group is the \textbf{alterating group} and is denoted $A_n$
+\end{definition}
+
+% 4.2
+\subsection{Determinants and What They Mean}
+\begin{definition}
+    Let $R$ be a commutative ring and $n \in \mathbb{N}$. The determinant is a mapping $\det : \Mat(n;R) \rightarrow R$ from square matrices with coefficients in $R$ to the ring $R$ from square matrices with coefficient in $R$ ot the ring $R$ that is given by the following formula (\textbf{Leibniz formula}):
+    $$A = 
+    \begin{pmatrix}
+        a_{11} & ... & a_{1n}\\
+        \vdots & \ddots & \vdots\\
+        a_{n1} & ... & a_{nn}
+    \end{pmatrix} \mapsto \det(A) = \sum_{\sigma \in \mathfrak{S}_n} \left(\sgn(\sigma)\prod_{i=1}^n a_{i\sigma}(i)\right)$$
+\end{definition}
+
+
+% 4.3
+\subsection{Characterising the Determinant}
+Fuck I'll do it later
+
 \end{document}
