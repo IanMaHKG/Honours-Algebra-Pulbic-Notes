@@ -789,6 +789,32 @@ We call $\textbf{M}_\mathcal{B}^\mathcal{A}(f) = _\mathcal{B}[f]_\mathcal{A}$ th
 
 % 4.3
 \subsection{Characterising the Determinant}
-Fuck I'll do it later
+\begin{definition}
+    Let $U,V,W$ be $F$-vector spaces. A \textbf{bilinear form on $U \times V$ with values in $W$} is a mapping $H:U \times V \rightarrow W$ which is a linear mapping in both of its entries. This means that it must satisfy the following properties for all $u_1, u_2 \in U$ and $v_1, v_2 \in V $ and $\lambda \in F$:
+    \[\begin{split}
+        H(u_1 + u_2, v_1) &= H(u_1, v_1) + H(u_2, v_1)\\
+        H(u_1, v_1 + v_2) &= H(u_1, v_1) + H(u_1, v_2)\\
+        H(\lambda u_1, v_1) &= \lambda H(u_1, v_1)\\
+        H(u_1,\lambda v_1) &= \lambda H(u_1, v_1)
+    \end{split}\]
+    A bilinear form is \textbf{symmetric} if $U = V$ and $H(u,v) = H(v,u) \quad \forall u,v \in U =V$\\
+    A bilinear form is \textbf{altering} or \textbf{antisymmetric} if $U = V$ and $H(u,u) = 0 \quad \forall u \in U =V$
+\end{definition}
+
+\begin{definition}
+    Let $V_1, ..., V_n, W$ be $F$-vector spaces. A mapping $H:V_1\times v_2\times ... \times V_n \rightarrow W$ is a \textbf{multilinear form} or just \textbf{multilinear} if for each $j$ the mapping $V_j$ defined by $v_j \mapsto H(v_1,...,v_j,...,v_n)$ with the $v_i\in V_i$ arbitrary fixed vectors pf $V_i$ for $i \neq j$, is linear. In the case $n = 2$. this is exactly the definition of a linear mapping.
+\end{definition}
+
+\begin{definition}
+    Let $V$ and $W$ be $F$-vector spaces. A multilinear form $H:V\times ... \times V \rightarrow W$ is \textbf{alterating} if it vanishes on every $n$-tuple of elements of $V$ that has at least two entries equal, in order words if:
+    $$(\exists i \neq j \text{ with } v_i = v_j \rightarrow H(v_1,...,v_j,...,v_i,...,v_n) = 0$$
+\end{definition}
+
+\begin{theorem}[Characterisation of the Determinant]
+    Let $F$ be a field, The mapping $\det: \Mat(n;F) \rightarrow F$ is the alterating multilinear form on $n$-tuples of column vectors with values in $F$ that takes the value $1_F$ on the identity matrix.
+\end{theorem}
+
+% 4.4
+\subsection{Rules for Caluculating with Determinants}
 
 \end{document}
