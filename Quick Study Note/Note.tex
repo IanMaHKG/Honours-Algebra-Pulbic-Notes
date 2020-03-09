@@ -30,6 +30,7 @@
 \newcommand{\vect}[1]{\overrightarrow{#1}}
 \newcommand{\suchthat}{\textit{ s.t. }}
 \newcommand{\sgn}{\textbf{sgn}}
+\newcommand{\adj}{\text{adj}}
 
 %Set the code name here
 \newcommand{\coursename}{Honours Algebra}
@@ -816,5 +817,39 @@ We call $\textbf{M}_\mathcal{B}^\mathcal{A}(f) = _\mathcal{B}[f]_\mathcal{A}$ th
 
 % 4.4
 \subsection{Rules for Caluculating with Determinants}
+\begin{theorem}[Multiplicy for Calculating with Determinants]
+    Let $R$ be a commutative right and $A,B \in \Mat(n,R)$. Then $\det(AB) = \det(A)\det(B)$
+\end{theorem}
+
+\begin{theorem}[Determinantal Criterion for invertibility]
+    The determinant of a square matrix with entries in a field $F$ is a non-zero i.f.f. the matrix is invertable.
+\end{theorem}
+
+\begin{definition}
+    Let $A\in \Mat(n;R)$ fir some commutative ring R and natural number $n$. Let $i$ and $j$ be integer between $1$ and $n$. Then the $(i,j)$ \textbf{cofactor of} $A$ is $C_{ij} = (-1)^{i+j}\det(A\langle i,j\rangle)$ where $A\langle i,j\rangle$ is the matrix $I$ obtain from $A$ deleting the $i$-th row and the $j$-th column.
+\end{definition}
+
+\begin{theorem}[Laplace's Expansion of the Determinant]
+    Let $A = (a_{ij})$ be an $n\times n$-matrix with entries form a commutative ring $R$. For a fixed $i$ the \textbf{$i$-th row expansion of the determinant is}
+    $$\det(A) = \sum_{j=1}^{n} a_{ij}C_{ij}$$
+    and for a fixed $j$ in the \textbf{$j$-th column expansion of the determinant} is
+    $$\det(A) = \sum_{i =1}^n a_{ij}C_{ij}$$
+\end{theorem}
+
+\begin{definition}
+    Let $A\in \Mat(n;R)$ where $R$ is a commutative ring. The \textbf{adjugate matrix} $\adj(A)$ is the $(n \times n)$-matrix whose entries are $adj(A)_{ij} = C_{ij}$ where $C_{ij}$ is then $(i,j)$-cofactor.
+\end{definition}
+
+\begin{theorem}[Cramer's Rule]
+    Let $A \in \Mat(n;R)$ where $R$ is a commutative ring. Then
+    $$A\cdot \adj(A) = (\det A)I_n$$
+\end{theorem}
+
+\begin{corollary}[invertibility of Matrices]
+    A square matrix with entries in a commutative ring $R$ is invertible i.f.f. its determinant is a unit in R. That is, $A \in Mat(n; R)$ is invertible i.f.f. $det(A) \in R^\times$.
+\end{corollary}
+
+% 4.5
+\subsection{Eigenvalues and Eigenvectors}
 
 \end{document}
