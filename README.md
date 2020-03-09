@@ -34,3 +34,4 @@ This notes is mainly aimed for quick referencing for assessements and exam used.
   - 4.3 Completed
 - 9 Mar 2020
   - 4.4 Completed
+  - Strating 4.5
