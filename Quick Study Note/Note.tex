@@ -859,4 +859,39 @@ We call $\textbf{M}_\mathcal{B}^\mathcal{A}(f) = _\mathcal{B}[f]_\mathcal{A}$ th
     Each endomorphism of a non-zero finite dimensional vector space over an algebraically closed field has an eigenvalue.
 \end{theorem}
 
+\begin{definition}
+    Let $R$ be a commutative ring and let $A \in \Mat(n;R)$ be a square matrix with entries in $R$. The polynomial $\det(A-xI_n) \in R[x]$ is called the \textbf{characteristic polynomial of the matrix $A$}. It is denoted by $\chi_A(x):= \det(A-xI_n)$.\\\colorbox{yellow}{Where $\chi$ stands for $\chi$aracteristic\tiny{(Okay Iain you're a good dad for sure...)}.}
+\end{definition}
+
+\begin{theorem}[Eigenvalues and Characteristic Polynomials]
+    Let $F$ be a field and $A \in \Mat(n;F)$ with entries in $F$. The eigenvalues of the linear mapping $A:F^n \rightarrow F^n$ are exactly the roots of the characteristic polynomial $\chi_A$.
+\end{theorem}
+
+
+% 4.6
+\subsection{Triangularisable, Diagonalisable, and the Cayley-Hamilton Theorem}
+Iain (not Ian just to be clear) said he's not examing triangularisable. (Will FC)
+
+\begin{prop}[Triangularisability]
+    Let $f:V\rightarrow V$ be an endomorphism of a finite dimensional $F$-vector space $V$. The following two statements are equivalent:
+    \begin{enumerate}
+        \item The vector space $V$ has an ordered basis $\mathcal{B} = (\vect{v_1},\vect{v_2},...,\vect{v_n})$ such that
+                \[\begin{split}
+                    f(\vect{v_1}) &= a_{11}\vect{v_1}\\
+                    f(\vect{v_2}) &= a_{12}\vect{v_1} + a_{22}\vect{v_2}\\
+                    &\vdots\\
+                    f(\vect{v_n}) &= \sum_{i=1}^n a_{in}\vect{v_i} \in V
+                \end{split}\]
+                such that the $n \times n$ matrix $_\mathfrak{B}[f]_\mathfrak{B} = (a_{ij})$ representing $f$ with respect to $\mathfrak{B}$ is upper triangular
+                $$A = \begin{pmatrix}
+                    a_{11} & a_{12} & \hdots & a_{1n}\\
+                    0 & a_{22} & \hdots & a_{2_n}\\
+                    \vdots & \vdots & \ddots & \vdots\\
+                    0 & 0 & \hdots & a_{nn}
+                \end{pmatrix}$$
+                When this happens, we say that $f$ is \textbf{triangularisable}.
+        \item The characteristic polynomial $\chi_f(x)$ of $f$ decomposes into linear factors in $F[x]$.
+    \end{enumerate}
+\end{prop}
+
 \end{document}

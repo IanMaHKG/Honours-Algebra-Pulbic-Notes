@@ -26,3 +26,4 @@
 \contentsline {subsection}{\numberline {4.3}Characterising the Determinant}{15}%
 \contentsline {subsection}{\numberline {4.4}Rules for Caluculating with Determinants}{16}%
 \contentsline {subsection}{\numberline {4.5}Eigenvalues and Eigenvectors}{17}%
+\contentsline {subsection}{\numberline {4.6}Triangularisable, Diagonalisable, and the Cayley-Hamilton Theorem}{17}%
