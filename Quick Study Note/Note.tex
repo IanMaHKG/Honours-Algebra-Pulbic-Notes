@@ -894,4 +894,32 @@ Iain (not Ian just to be clear) said he's not examing triangularisable. (Will FC
     \end{enumerate}
 \end{prop}
 
+\begin{definition}
+    AN endomorphism $f:V \rightarrow V$ of an $F$-vector space $V$ is \textbf{diagonalisable} i.f.f. $\exists$ basis of $V$ consisting of eigenvectors of $f$. If $V$ is finite dimensional then this is the same as saying that $\exists$ an order basis $\mathcal{B} = \{\vect{v_1}, ..., \vect{v_n}\}$ such that corresponding matrix representing $f$ is diagonal, that is $_\mathcal{B}[f]_\mathcal{B} = \text{diag}(\lambda_1,...,\lambda_b)$. In this case, $f(\vect{v_1}) = \lambda_1\vect{v_1}$.\\
+    A square matrix is \textbf{diagonalisable} i.f.f. the corresponding linear mapping $F^n \rightarrow F^n$ given by left multiplication by $A$ is diagonalisable. This means $\exists$ invertable matrix $P\in \text{GL}(n;F)$ such that $P^{-1}AP = \text{diag}(\lambda_1, ...,\lambda_n)$
+\end{definition}
+
+\begin{lemma}[Linear Independence of Eigenvectors]
+    Let $f:V \rightarrow V$ be an endomorphism of a vector space $V$ and let $\vect{v_1}, ...,\vect{v_n}$ be eigenvectors of $f$ with pairwise different eigenvalues $\lambda_1, ..., \lambda_n$. Then the vectors are linearly independent.
+\end{lemma}
+
+\begin{theorem}[Cayley-Hamilton Theorem]
+    Let $A \in \Mat(n;R)$ be a square matrix with entries in a commutative ring $R$. The evaluating its characteristic polynomial $\chi_{A}(x)\in R[x]$ at the matrix $A$ gives zero.
+\end{theorem}
+
+
+% 4.7
+\subsection{Google’s PageRank Algorithm (Markov matrix/stochastic matrix)}
+\begin{definition}
+    A matrix $M$ whose entries are non-zero and such that the sum of the entries of each column equal 1 is a \textbf{Markov matrix} or a \textbf{stochastic matrix}.
+\end{definition}
+
+\begin{lemma}
+    Suppose $M\in \Mat(n;\mathbb{R})$ is a Markov matrix. The 1 is an eigenvalue of $M$
+\end{lemma}
+
+\begin{theorem}[Perron, 1907]
+    If $M \in \Mat(n;\mathbb{R})$ is a Markov matrix all whose entries are positive, then eigenspace $E(1,M)$ is one dimensional. There exists a unique basis vector $\vect{v} \in E(1,M)$ all of whose entries are positive real numbers, $v_i > 0$ for all $i$, and such that the sum of it entries is 1, $\sum_i v_i = 1$
+\end{theorem}
+
 \end{document}
