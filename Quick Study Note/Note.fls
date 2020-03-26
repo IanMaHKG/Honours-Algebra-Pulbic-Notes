@@ -215,9 +215,9 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-OUTPUT /home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.toc
 OUTPUT /home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.pdf
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+OUTPUT /home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.toc
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd

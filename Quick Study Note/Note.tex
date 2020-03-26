@@ -37,6 +37,7 @@
 \newcommand{\suchthat}{\textit{ s.t. }}
 \newcommand{\sgn}{\textbf{sgn}}
 \newcommand{\adj}{\text{adj}}
+\newcommand{\diag}{\text{diag}}
 
 %Set the course name here
 \newcommand{\coursename}{Honours Algebra}
@@ -1068,5 +1069,36 @@ Iain (not Ian just to be clear) said he's not examing triangularisable. (Will FC
     $$\overline{P}^TAP = P^{-1}AP = \text{diag}(\lambda_1,..., \lambda_n)$$
     Where $\lambda_1, ..., \lambda_n$ are the (necessarily real) eigenvalues of $A$, repeated according to their multiplicity as roots of the characteristic polynomial of $A$
 \end{corollary}
+
+
+% Chapter 6
+\section{Jordan Normal Form}
+% 6.1
+\subsection{Motivation}
+Some intro...
+
+% 6.2
+\subsection{Statement of the Jordan Normal Form and Strategy of Proof}
+\begin{definition}
+    Given an integer $r \geq 1$ define an $(r \times r)$-matrix $J(r)$, called the \textbf{nilpotent Jordan block of size} $r$, by the rule $J(r)_{ij} = 1$ for $j = i+1$ and $J(r)_{ij} = 0$ otherwise. In particular, $J(1) = \begin{pmatrix}
+        0
+    \end{pmatrix}$\\
+    Given an integer $r \geq 1$ and a scalar $\lambda \in F$ define an $(r \times r)$-matrix $J(r,\lambda)$ called the \textbf{Jordan block of size $r$ and eigenvalue $\lambda$}, by the rule
+    $$J(r,\lambda) = \lambda I_n + J(r) = D + N$$
+    where $D = \lambda I_n,\quad N = J(r)$ such that $DN = ND = \lambda J(r)$
+\end{definition}
+
+\begin{theorem}[Jordan Normal Form]
+    Let $F$ be an algebraically closed field. Let $V$ be a finite dimensional vector space and let $\phi: V \rightarrow V$ be an endomorphism of $V$ with characteristic polynomial
+    $$\chi_\phi(x) = (\lambda_1 - x)^{a_1}(\lambda_2 - x)^{a_2}...(\lambda_s - x)^{a_s} \in F[x]\left(a_i \geq 1, \sum_{i=1}^s a_i = n\right)$$
+    for distinct $\lambda_1, ..., \lambda_s \in F$. Then $\exists$ order basis $\mathcal{B}$ of V such that the matrix of $\phi$ w.r.t. the basis $\mathcal{B}$ is block diagonal with Jordan blocks on the diagonal
+    $$_\mathcal{B}[\phi]_\mathcal{B} = \diag(J(r_{11},\lambda_1),...,J(r_{1m_1},\lambda_1),J(r_{21},\lambda_2),...,J(r_{sm_s},\lambda_s))$$
+    with $r_{11},...,r_{1m_1},r_{21},...,r_{sm_s} \geq 1$ such that
+    $$a_i = \sum_{j = 1}^{m_i} r_{ij} \quad \forall i: 1 \leq i \leq s $$
+\end{theorem}
+
+% 6.3
+\subsection{The Proof of Jordan Normal Form}
+I'd suggest reading the full notes from here...
 
 \end{document}

@@ -43,3 +43,5 @@ This notes is mainly aimed for quick referencing for assessements and exam used.
   - How the hack did I complete that much in one day (Hands gone)
   - Decrease font size for more contents per page
   - Change some content layout for more contents per page
+- 26 Mar 2020
+  - 6.2 Completed
