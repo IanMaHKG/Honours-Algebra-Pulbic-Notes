@@ -1,4 +1,5 @@
-\documentclass[12pt]{article}
+% default 12pt
+\documentclass[10pt]{article}
  
 \usepackage[margin=1in]{geometry} 
 \usepackage{amsmath,amsthm,amssymb,scrextend}
@@ -6,6 +7,7 @@
 \usepackage{graphicx}
 \usepackage{adjustbox}
 \usepackage{enumitem}
+\usepackage{mathtools}
 
 \setlength{\parskip}{0em}
 \setlist[enumerate]{itemsep=0mm}
@@ -22,23 +24,27 @@
 
 \newtheorem{theorem}{THEOREM}[subsection]
 
+\DeclarePairedDelimiterX{\infdivx}[2]{(}{)}{%
+  #1\;\delimsize\|\;#2%
+}
+% \DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+\newcommand{\norm}[1]{\lVert #1 \rVert}
 \newcommand{\uline}[1]{\rule[0pt]{#1}{0.4pt}}
 \newcommand{\Hom}{\text{Hom}}
 \newcommand{\Maps}{\text{Maps}}
 \newcommand{\image}{\text{im}}
 \newcommand{\Mat}{\text{Mat}}
-\newcommand{\vect}[1]{\overrightarrow{#1}}
 \newcommand{\suchthat}{\textit{ s.t. }}
 \newcommand{\sgn}{\textbf{sgn}}
 \newcommand{\adj}{\text{adj}}
 
-%Set the code name here
+%Set the course name here
 \newcommand{\coursename}{Honours Algebra}
 
 \usepackage{tcolorbox}
 \tcbuselibrary{theorems}
 
-\newtcbtheorem[number within=section]{mytheo}{Theorem}%
+\newtcbtheorem[number within=section]{mytheo}{Theorem}
 {colback=red!5,colframe=red!35!black,fonttitle=\bfseries}{th}
 \newtheorem{lemma}{LEMMA}[subsection]
 \newtheorem{prop}{PROPOSITION}[subsection]
@@ -49,7 +55,7 @@
 
 \title{\coursename\\Quick Notes}
 \author{Ian S.W. Ma}
-\date{}
+\date{Still single find me on Facebook or Twitter}
 
  
  
@@ -368,7 +374,7 @@ Let's now refer the column and row rank as \textbf{rank} for the sake of not los
 
 \subsection{Abstract Linear Mappings and Matrices}
 \begin{theorem}[Abstract  Linear  Mappings  and  Matrices]
-    Let $F$ be a field, $V,W$ vector spaces over $F$ with ordered bases $\mathcal{A} = (\vect{v}_1,...,\vect{v}_m)$ and $\mathcal{B} = (\vect{w}_1,...,\vect{w}_n)$. Then to each linear mapping $f:V\rightarrow W$ we assosiate bases a \textbf{representing matrix} $_\mathcal{B}[f]_\mathcal{A}$ whose entried $a_ij$ are defined by the identity $$f(\vect{v}_j) = \sum_{i=1}^n{a_{ij}\vect{w}_i}\in W$$
+    Let $F$ be a field, $V,W$ vector spaces over $F$ with ordered bases $\mathcal{A} = (\vec{v}_1,...,\vec{v}_m)$ and $\mathcal{B} = (\vec{w}_1,...,\vec{w}_n)$. Then to each linear mapping $f:V\rightarrow W$ we assosiate bases a \textbf{representing matrix} $_\mathcal{B}[f]_\mathcal{A}$ whose entried $a_ij$ are defined by the identity $$f(\vec{v}_j) = \sum_{i=1}^n{a_{ij}\vec{w}_i}\in W$$
     This produces a bijection, which is event an isomorphismof vector spaces:
     \[\begin{split}
         \textbf{M}_\mathcal{B}^\mathcal{A}: \Hom_F(V,W) &\stackrel{\sim}{\rightarrow} \Mat(n \times m; F)\\
@@ -382,18 +388,18 @@ We call $\textbf{M}_\mathcal{B}^\mathcal{A}(f) = _\mathcal{B}[f]_\mathcal{A}$ th
 \end{theorem}
 
 \begin{definition}
-    Let $V$ be a finite dimensional vector space with an ordered basis $\mathcal{A} = (\vect{v}_1,...,\vect{v}_m)$. We will denote the invese to the bijection of $\Phi_\mathcal{A} \stackrel{\sim}{\rightarrow} V,(\alpha_a,...,\alpha_m)^T \mapsto \sum_{i=1}^m{\alpha_i\vect{v}_i}$ by
-    $$\vect{v} \mapsto _\mathcal{A}[\vect{v}]$$
+    Let $V$ be a finite dimensional vector space with an ordered basis $\mathcal{A} = (\vec{v}_1,...,\vec{v}_m)$. We will denote the invese to the bijection of $\Phi_\mathcal{A} \stackrel{\sim}{\rightarrow} V,(\alpha_a,...,\alpha_m)^T \mapsto \sum_{i=1}^m{\alpha_i\vec{v}_i}$ by
+    $$\vec{v} \mapsto _\mathcal{A}[\vec{v}]$$
 \end{definition}
 
 \begin{theorem}[Representation of the Image of a Vector]
-    Let $V,W$ be finite dimensional vector spaces over $F$ with ordered bases $\mathcal{A,B}$ and let $f:V\rightarrow W$ be a linear mapping. The following holds for $\vect{v} \in V$:
-    $$_\mathcal{B}[f(\vect{v})] = _\mathcal{B}[f]_\mathcal{A} \circ _\mathcal{A}[\vect{v}]$$
+    Let $V,W$ be finite dimensional vector spaces over $F$ with ordered bases $\mathcal{A,B}$ and let $f:V\rightarrow W$ be a linear mapping. The following holds for $\vec{v} \in V$:
+    $$_\mathcal{B}[f(\vec{v})] = _\mathcal{B}[f]_\mathcal{A} \circ _\mathcal{A}[\vec{v}]$$
 \end{theorem}
 
 \subsection{Change of Matrix by Change of Basis}
 \begin{definition}
-    Let $\mathcal{A} = (\vect{v}_1,...,\vect{v}_n), \mathcal{B} = (\vect{w}_1,...,\vect{w}_n)$ be ordered bses of the same $F$-vector space $V$. Then the matrix representing the identity mapping with respect to the bases $_\mathcal{B}[\text{id}_V]_\mathcal{A}$ is called a \textbf{change of basis matrix}. By definition, its entries are given by the equalities $\vect{v}_j = \sum_{i=1}^n{a_{ij}\vect{w}_i}$
+    Let $\mathcal{A} = (\vec{v}_1,...,\vec{v}_n), \mathcal{B} = (\vec{w}_1,...,\vec{w}_n)$ be ordered bses of the same $F$-vector space $V$. Then the matrix representing the identity mapping with respect to the bases $_\mathcal{B}[\text{id}_V]_\mathcal{A}$ is called a \textbf{change of basis matrix}. By definition, its entries are given by the equalities $\vec{v}_j = \sum_{i=1}^n{a_{ij}\vec{w}_i}$
 \end{definition}
 
 \begin{theorem}[Change of Basis]
@@ -852,7 +858,7 @@ We call $\textbf{M}_\mathcal{B}^\mathcal{A}(f) = _\mathcal{B}[f]_\mathcal{A}$ th
 % 4.5
 \subsection{Eigenvalues and Eigenvectors}
 \begin{definition}
-    Let $f:V \rightarrow V$ an endomorphism of an $F$-vector space $V$. A scalar $\lambda \in F$ is an eigenvalue of $f$ i.f.f. $\exists \vect{v} \in V \quad \vect{v} \neq \vect{0}$ sych that $f(\vect{v}) = \lambda\vect{v}$. Each such vector is called an \textbf{eigenvector of $f$ with eigenvalue $\lambda$}. For any $\lambda \in F$, the \textbf{eigenspace of $f$ with eigenvalue $\lambda$ is}    $$E(\lambda,f) = \{\vect{v}\in V:f(\vect{v}) = \lambda\vect{v}\}$$
+    Let $f:V \rightarrow V$ an endomorphism of an $F$-vector space $V$. A scalar $\lambda \in F$ is an eigenvalue of $f$ i.f.f. $\exists \vec{v} \in V \quad \vec{v} \neq \vec{0}$ sych that $f(\vec{v}) = \lambda\vec{v}$. Each such vector is called an \textbf{eigenvector of $f$ with eigenvalue $\lambda$}. For any $\lambda \in F$, the \textbf{eigenspace of $f$ with eigenvalue $\lambda$ is}    $$E(\lambda,f) = \{\vec{v}\in V:f(\vec{v}) = \lambda\vec{v}\}$$
 \end{definition}
 
 \begin{theorem}[Existance of Eigenvalues]
@@ -875,12 +881,12 @@ Iain (not Ian just to be clear) said he's not examing triangularisable. (Will FC
 \begin{prop}[Triangularisability]
     Let $f:V\rightarrow V$ be an endomorphism of a finite dimensional $F$-vector space $V$. The following two statements are equivalent:
     \begin{enumerate}
-        \item The vector space $V$ has an ordered basis $\mathcal{B} = (\vect{v_1},\vect{v_2},...,\vect{v_n})$ such that
+        \item The vector space $V$ has an ordered basis $\mathcal{B} = (\vec{v_1},\vec{v_2},...,\vec{v_n})$ such that
                 \[\begin{split}
-                    f(\vect{v_1}) &= a_{11}\vect{v_1}\\
-                    f(\vect{v_2}) &= a_{12}\vect{v_1} + a_{22}\vect{v_2}\\
+                    f(\vec{v_1}) &= a_{11}\vec{v_1}\\
+                    f(\vec{v_2}) &= a_{12}\vec{v_1} + a_{22}\vec{v_2}\\
                     &\vdots\\
-                    f(\vect{v_n}) &= \sum_{i=1}^n a_{in}\vect{v_i} \in V
+                    f(\vec{v_n}) &= \sum_{i=1}^n a_{in}\vec{v_i} \in V
                 \end{split}\]
                 such that the $n \times n$ matrix $_\mathfrak{B}[f]_\mathfrak{B} = (a_{ij})$ representing $f$ with respect to $\mathfrak{B}$ is upper triangular
                 $$A = \begin{pmatrix}
@@ -895,12 +901,12 @@ Iain (not Ian just to be clear) said he's not examing triangularisable. (Will FC
 \end{prop}
 
 \begin{definition}
-    AN endomorphism $f:V \rightarrow V$ of an $F$-vector space $V$ is \textbf{diagonalisable} i.f.f. $\exists$ basis of $V$ consisting of eigenvectors of $f$. If $V$ is finite dimensional then this is the same as saying that $\exists$ an order basis $\mathcal{B} = \{\vect{v_1}, ..., \vect{v_n}\}$ such that corresponding matrix representing $f$ is diagonal, that is $_\mathcal{B}[f]_\mathcal{B} = \text{diag}(\lambda_1,...,\lambda_b)$. In this case, $f(\vect{v_1}) = \lambda_1\vect{v_1}$.\\
+    AN endomorphism $f:V \rightarrow V$ of an $F$-vector space $V$ is \textbf{diagonalisable} i.f.f. $\exists$ basis of $V$ consisting of eigenvectors of $f$. If $V$ is finite dimensional then this is the same as saying that $\exists$ an order basis $\mathcal{B} = \{\vec{v_1}, ..., \vec{v_n}\}$ such that corresponding matrix representing $f$ is diagonal, that is $_\mathcal{B}[f]_\mathcal{B} = \text{diag}(\lambda_1,...,\lambda_b)$. In this case, $f(\vec{v_1}) = \lambda_1\vec{v_1}$.\\
     A square matrix is \textbf{diagonalisable} i.f.f. the corresponding linear mapping $F^n \rightarrow F^n$ given by left multiplication by $A$ is diagonalisable. This means $\exists$ invertable matrix $P\in \text{GL}(n;F)$ such that $P^{-1}AP = \text{diag}(\lambda_1, ...,\lambda_n)$
 \end{definition}
 
 \begin{lemma}[Linear Independence of Eigenvectors]
-    Let $f:V \rightarrow V$ be an endomorphism of a vector space $V$ and let $\vect{v_1}, ...,\vect{v_n}$ be eigenvectors of $f$ with pairwise different eigenvalues $\lambda_1, ..., \lambda_n$. Then the vectors are linearly independent.
+    Let $f:V \rightarrow V$ be an endomorphism of a vector space $V$ and let $\vec{v_1}, ...,\vec{v_n}$ be eigenvectors of $f$ with pairwise different eigenvalues $\lambda_1, ..., \lambda_n$. Then the vectors are linearly independent.
 \end{lemma}
 
 \begin{theorem}[Cayley-Hamilton Theorem]
@@ -919,7 +925,136 @@ Iain (not Ian just to be clear) said he's not examing triangularisable. (Will FC
 \end{lemma}
 
 \begin{theorem}[Perron, 1907]
-    If $M \in \Mat(n;\mathbb{R})$ is a Markov matrix all whose entries are positive, then eigenspace $E(1,M)$ is one dimensional. There exists a unique basis vector $\vect{v} \in E(1,M)$ all of whose entries are positive real numbers, $v_i > 0$ for all $i$, and such that the sum of it entries is 1, $\sum_i v_i = 1$
+    If $M \in \Mat(n;\mathbb{R})$ is a Markov matrix all whose entries are positive, then eigenspace $E(1,M)$ is one dimensional. There exists a unique basis vector $\vec{v} \in E(1,M)$ all of whose entries are positive real numbers, $v_i > 0$ for all $i$, and such that the sum of it entries is 1, $\sum_i v_i = 1$
 \end{theorem}
+
+
+%  Chapter 5
+\newpage
+\section{Inner Product Spaces}
+%  5.1
+\subsection{Inner Product Space: Definitions}
+\begin{definition}
+    Let $V$ be a vector space over $\mathbb{R}$. An \textbf{inner product} on $V$ is a mapping $(-,-): V \times V \rightarrow \mathbb{R}$ that satisfies the following $\forall \vec{x},\vec{y},\vec{z}\in V$ amdd $\lambda,\mu\in \mathbb{R}$:
+    \begin{enumerate}
+        \item $(\lambda\vec{x} + \mu\vec{y}, z) = \lambda(\vec{x},\vec{z}) + \mu(\vec{y},\vec{z})$
+        \item $(\vec{x}, \vec{y}) = (\vec{y},\vec{x})$
+        \item $(\vec{x},\vec{x}) \geq 0$
+    \end{enumerate} 
+    A \textbf{real innter space product space} is a real vector space endowed with an inner product.
+\end{definition}
+
+\begin{definition}
+    Let $V$ be a vector space over $\mathbb{C}$. An \textbf{inner product} on $V$ is a mapping $(-,-): V \times V \rightarrow \mathbb{C}$ that satisfies the following $\forall \vec{x},\vec{y},\vec{z}\in V$ amdd $\lambda,\mu\in \mathbb{C}$:
+    \begin{enumerate}
+        \item $(\lambda\vec{x} + \mu\vec{y}, z) = \lambda(\vec{x},\vec{z}) + \mu(\vec{y},\vec{z})$
+        \item $(\vec{x}, \vec{y}) = \overline{(\vec{y},\vec{x})}$
+        \item $(\vec{x},\vec{x}) \geq 0$
+    \end{enumerate} 
+    Where $\overline{z}$ denots the complex conjugate of $z$ A \textbf{complex innter space product space} is a complex vector space endowed with an inner product.
+\end{definition}
+
+\begin{definition}
+    In a real or complex innter product space the \textbf{length} or \textbf{inner product norm} or \textbf{norm} $\norm{\vec{v}} = \sqrt{(\vec{v},\vec{v})}$.\\
+    Vectors whose length is 1 are called \textbf{units}. Two vectors $\vec{v},\vec{w}$ are \textbf{orthogonal} can be denoted as $\vec{v} \perp \vec{w}$ i.f.f. $\vec{v}, \vec{w} = 0$
+\end{definition}
+
+\begin{definition}
+    A family $\left(\vec{v_i}\right)_{i\in I}$ for vectors from an inner product space is an \textbf{orthogonal family} if all the vectors $\vec{v_i}$ have length 1 and if they are pairwise orthogonal to each other, which, using the \textit{Kronecker delta symbol} defined in Example 2.1.2(Check full note), means $(\vec{v_i},\vec{v_j}) = \delta_{ij}$\\
+    An orthogonal family that is a basis is an \textbf{orthogonal basis}
+\end{definition}
+
+\begin{theorem}
+    Every finite dimensional inner product space has an orthonormal basis
+\end{theorem}
+
+% 5.2
+\subsection{Orthogonal Complements and Orthogonal Projections}
+\begin{definition}
+    Let $V$ be an inner product space and let $T \subseteq V$ be am arbitrary subset. Define $T^\perp = \{\vec{v} \in V: \vec{v} \perp \vec{t} \quad\forall \vec{t} \in T\}$ calling this set the \textbf{orthogonal} to $T$
+\end{definition}
+
+\begin{prop}
+    Let $V$ be an inner product space and let $U$ be a finite dimensional subspace of $V$. Then $U$ and $Y^\perp$ are complementary in the sense of definition 1.7.6 (Check full note). In other words $V = U \oplus U^\perp$
+\end{prop}
+
+\begin{definition}
+    Let $U$ be a finite dimensional subspace of an inner product space $V$. The space $U^\perp$ is the \textbf{orthogonal Complement to} $U$. The \textbf{orthogonal projection frome $V$ to $U$} is the mapping $\pi_U:V \rightarrow V$ that sends $\vec{v} = \vec{p}+ \vec{r}$ to $\vec{p}$
+\end{definition}
+
+\begin{prop}
+    Let $U$ be a finite dimensional subspace of an inner product space $V$ and let $\pi_U$ be the orthogonal projection form $V$ onto $U$.
+    \begin{enumerate}
+        \item $\pi_U$ is a linear mapping with $\image(\pi_U) = U$ and $\ker(\pi_U) = U^\perp$
+        \item If $\{\vec{v_1},..., \vec{v_n}\}$ is an orthogonal basis of $U$, then $\pi_U$ is given by the following formula for all $\vec{v} \in V$ $$\pi_U(\vec{v}) = \sum_{i=1}^n(\vec{v},\vec{v_i})\vec{v_i}$$
+        \item $\pi_U^2 = \pi_U$, that is $\pi_U$ is an idempotent
+    \end{enumerate}
+\end{prop}
+
+\begin{theorem}[Cauchy-Schwarz Inequality]
+    Let $\vec{v}, \vec{w}$ be vectors in an inner product space. Then $|(\vec{v}, \vec{w})| \leq \norm{\vec{v}}\norm{\vec{w}}$ with equality i.f.f. $\vec{v}, \vec{w}$ are linearly dependent.
+\end{theorem}
+
+\begin{corollary}
+    The norm $\norm{\cdot}$ on an inner product space $V$ satisfies, for any $\vec{v}, \vec{w}\in V$ and scalar $\lambda$:
+    \begin{enumerate}
+        \item $\norm{\vec{v}} \geq 0$ with equality i.f.f. $\vec{v} = \vec{0}$
+        \item $\norm{\lambda\vec{v}} = |\lambda|\norm{\vec{v}}$
+        \item $\norm{\vec{v}+ \vec{w}} \leq \norm{\vec{v}} + \norm{\vec{w}}$ (triangle inequality)
+    \end{enumerate}
+\end{corollary}
+
+\begin{theorem}
+    Let $\vec{v_1},..., \vec{v_k}$ be a linearly independent vectors in an inner product space $V$. Then there exists an orthonormal family $\vec{w_1},... \vec{w_k}$ with the property for all $1 \leq i \leq k$: $$\vec{w_1} \in \mathbb{R}_{>0}\vec{v_i}+ \langle\vec{v_i-1,...,\vec{v_1}}\rangle$$
+\end{theorem}
+
+% 5.3
+\subsection{Adjoints and Self-Adjoints}
+\begin{definition}
+    Let $V$ be an inner product space. Then two endomorphism $T,S:V \rightarrow V$ are called \textbf{adjoint} to the other if the following holds for all $\vec{v}, \vec{w} \in V$: $$(T\vec{v}, \vec{w}) = (\vec{v}, S\vec{w})$$
+    In this say we can express $S = T^*$ and call $S$ the adjoint of $T$ 
+\end{definition}
+
+\begin{theorem}
+    Let $V$ be a finite dimensional inner product space. Let $T:V \rightarrow V$ be an endomorphism. The $T*$ exists. That is, $\exists$ a unique linear mapping $T^*: V \rightarrow V$ such that for all $\vec{v}, \vec{w} \in V$
+    $$(T\vec{v}, \vec{w}) = (\vec{v}, T^*\vec{w})$$
+\end{theorem}
+
+\begin{definition}
+    An endomorphism of an inner product space $T:V \rightarrow V$ is \textbf{self adjoint} if $T^* = T$
+\end{definition}
+
+\begin{theorem}
+    Let $T:V \rightarrow V$ be a self-adjoint linear mapping on an inner product space $V$.
+    \begin{enumerate}
+        \item Every eigenvalue of $T$ is real.
+        \item If $\lambda$ and $\mu$ are distinct eigenvalues of $T$ which corresponding eigenvectors $\vec{v}, \vec{w}$, then $(\vec{v}, \vec{w}) = 0$
+        \item $T$ has an eigenvalue
+    \end{enumerate}
+\end{theorem}
+
+\begin{theorem}[The Spectral Theorem for Self-Adjoint Endomorphisms]
+    Let $V$ be a finite dimensional inner product space and let $T:V \rightarrow V$ be a self-adjoint linear mapping. Then $V$ has an orthonormal basis consisting of eigenvectors of $T$
+\end{theorem}
+
+\begin{definition}[Orthogonal Matrix]
+    An \textbf{orthogonal matrix} is a square matrix $P$ with real entries such that $P^{-1} = P^T$ 
+\end{definition}
+
+\begin{corollary}[The Spectral Theorem for Real Symmetric Matrices]
+    Let $A$ be a real $(n \times n)$-symmetrical matrix. Then $\exists$ an $(n \times n)$-orthogonal matrix $P$ such that
+    $$P^TAP = P^{-1}AP = \text{diag}(\lambda_1,..., \lambda_n)$$
+    Where $\lambda_1, ..., \lambda_n$ are the (necessarily real) eigenvalues of $A$, repeated according to their multiplicity as roots of the characteristic polynomial of $A$
+\end{corollary}
+
+\begin{definition}[Unitary Matrix]
+    An \textbf{unitary matrix} is an $(n \times n)$-matrix $P$ with complex entries such that $\overline{P}^TP = I_n$. In other words, $P^{-1} = \overline{P}^T$ 
+\end{definition}
+
+\begin{corollary}[The Spectral Theorem for Hermitian Matrices]
+    Let $A$ be a $(n\times n)$-hermitian matrix. Then there is an $(n \times n)$-unitary matrix $P$ such that
+    $$\overline{P}^TAP = P^{-1}AP = \text{diag}(\lambda_1,..., \lambda_n)$$
+    Where $\lambda_1, ..., \lambda_n$ are the (necessarily real) eigenvalues of $A$, repeated according to their multiplicity as roots of the characteristic polynomial of $A$
+\end{corollary}
 
 \end{document}

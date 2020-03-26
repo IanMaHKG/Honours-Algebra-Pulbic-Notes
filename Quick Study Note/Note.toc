@@ -5,26 +5,30 @@
 \contentsline {subsection}{\numberline {1.4}Vector Subspaces}{2}%
 \contentsline {subsection}{\numberline {1.5}Linear Independence and Bases}{3}%
 \contentsline {subsection}{\numberline {1.6}Dimension of a vector space}{4}%
-\contentsline {subsection}{\numberline {1.7}Linear Mappings}{5}%
+\contentsline {subsection}{\numberline {1.7}Linear Mappings}{4}%
 \contentsline {subsection}{\numberline {1.8}Rank-Nullity Throrem}{5}%
-\contentsline {section}{\numberline {2}Linear Mappings and Matrices}{6}%
-\contentsline {subsection}{\numberline {2.1}Linear Mappings $F^m \rightarrow F^n$ and Matrices}{6}%
+\contentsline {section}{\numberline {2}Linear Mappings and Matrices}{5}%
+\contentsline {subsection}{\numberline {2.1}Linear Mappings $F^m \rightarrow F^n$ and Matrices}{5}%
 \contentsline {subsection}{\numberline {2.2}Basic Properties of Matrices}{6}%
-\contentsline {subsection}{\numberline {2.3}Abstract Linear Mappings and Matrices}{7}%
-\contentsline {subsection}{\numberline {2.4}Change of Matrix by Change of Basis}{8}%
-\contentsline {section}{\numberline {3}Rings and Modules}{8}%
-\contentsline {subsection}{\numberline {3.1}Rings}{8}%
-\contentsline {subsection}{\numberline {3.2}Peoperties of Rings}{9}%
-\contentsline {subsection}{\numberline {3.3}Polynomials}{10}%
-\contentsline {subsection}{\numberline {3.4}Homomorpgism, Ideals and Subrings}{11}%
-\contentsline {subsection}{\numberline {3.5}Equivalece Relations}{12}%
-\contentsline {subsection}{\numberline {3.6}Factor Rings and the First Isomorphism Theorem}{12}%
-\contentsline {subsection}{\numberline {3.7}Modules and All That}{13}%
-\contentsline {section}{\numberline {4}Determinants and Eigenvalues Redux}{15}%
-\contentsline {subsection}{\numberline {4.1}The sign of a permutation}{15}%
-\contentsline {subsection}{\numberline {4.2}Determinants and What They Mean}{15}%
-\contentsline {subsection}{\numberline {4.3}Characterising the Determinant}{15}%
-\contentsline {subsection}{\numberline {4.4}Rules for Caluculating with Determinants}{16}%
-\contentsline {subsection}{\numberline {4.5}Eigenvalues and Eigenvectors}{17}%
-\contentsline {subsection}{\numberline {4.6}Triangularisable, Diagonalisable, and the Cayley-Hamilton Theorem}{17}%
-\contentsline {subsection}{\numberline {4.7}Google’s PageRank Algorithm (Markov matrix/stochastic matrix)}{18}%
+\contentsline {subsection}{\numberline {2.3}Abstract Linear Mappings and Matrices}{6}%
+\contentsline {subsection}{\numberline {2.4}Change of Matrix by Change of Basis}{7}%
+\contentsline {section}{\numberline {3}Rings and Modules}{7}%
+\contentsline {subsection}{\numberline {3.1}Rings}{7}%
+\contentsline {subsection}{\numberline {3.2}Peoperties of Rings}{8}%
+\contentsline {subsection}{\numberline {3.3}Polynomials}{8}%
+\contentsline {subsection}{\numberline {3.4}Homomorpgism, Ideals and Subrings}{9}%
+\contentsline {subsection}{\numberline {3.5}Equivalece Relations}{10}%
+\contentsline {subsection}{\numberline {3.6}Factor Rings and the First Isomorphism Theorem}{11}%
+\contentsline {subsection}{\numberline {3.7}Modules and All That}{11}%
+\contentsline {section}{\numberline {4}Determinants and Eigenvalues Redux}{12}%
+\contentsline {subsection}{\numberline {4.1}The sign of a permutation}{12}%
+\contentsline {subsection}{\numberline {4.2}Determinants and What They Mean}{13}%
+\contentsline {subsection}{\numberline {4.3}Characterising the Determinant}{13}%
+\contentsline {subsection}{\numberline {4.4}Rules for Caluculating with Determinants}{13}%
+\contentsline {subsection}{\numberline {4.5}Eigenvalues and Eigenvectors}{14}%
+\contentsline {subsection}{\numberline {4.6}Triangularisable, Diagonalisable, and the Cayley-Hamilton Theorem}{14}%
+\contentsline {subsection}{\numberline {4.7}Google’s PageRank Algorithm (Markov matrix/stochastic matrix)}{15}%
+\contentsline {section}{\numberline {5}Inner Product Spaces}{16}%
+\contentsline {subsection}{\numberline {5.1}Inner Product Space: Definitions}{16}%
+\contentsline {subsection}{\numberline {5.2}Orthogonal Complements and Orthogonal Projections}{16}%
+\contentsline {subsection}{\numberline {5.3}Adjoints and Self-Adjoints}{17}%

@@ -38,3 +38,7 @@ This notes is mainly aimed for quick referencing for assessements and exam used.
 - 10 Mar 2020
   - 4.5 Completed
   - Starting 4.6
+- 25 mar 2020
+  - Chapter 5 completed
+  - How the hack did I complete that much in one day (Hands gone)
+  - Decrease font size for more contents per page
