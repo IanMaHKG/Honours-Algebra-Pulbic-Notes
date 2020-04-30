@@ -7,7 +7,7 @@ This notes is mainly aimed for quick referencing for assessements and exam used.
 ## Changelogs
 - 23 Jan 2020
   - All notes untill section 1.5 are included, except 1.4.9 on Prof. Gordon's note.
-- 3 Feb 2020 (***Brexit Update :( ***)
+- 3 Feb 2020 (Brexit Update :()
   - Chapter 2 is completed. 1.4.9 still undone :(
 - 5 Feb 2020
   - 3.1 Done, 1.4.8 remains. Will stop here foe a while until 3.2 is being taught.
@@ -50,5 +50,5 @@ This notes is mainly aimed for quick referencing for assessements and exam used.
   - make some throems/sentences more readable with mathematical expressions
   - added missing bits
 - 30 April 2020
-  - Removed Chapter as will not be included in exam
+  - Removed Chapter 6 as will not be included in exam
   - 4 pages per side so it fits the exam's guidline
