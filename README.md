@@ -45,3 +45,10 @@ This notes is mainly aimed for quick referencing for assessements and exam used.
   - Change some content layout for more contents per page
 - 26 Mar 2020
   - 6.2 Completed
+- 28 April 2020
+  - fixed typos
+  - make some throems/sentences more readable with mathematical expressions
+  - added missing bits
+- 30 April 2020
+  - Removed Chapter as will not be included in exam
+  - 4 pages per side so it fits the exam's guidline
