@@ -11,7 +11,10 @@
 % \usepackage{fancyhdr}
 \usepackage[margin=0.20in]{geometry}
 \usepackage{pgfpages}
-\pgfpagesuselayout{4 on 1}[a4paper, border shrink=0mm]
+% % For shrinking 4 pages to 1
+% \pgfpagesuselayout{4 on 1}[a4paper, border shrink=0mm]
+% 2 in 1
+\pgfpagesuselayout{2 on 1}[a4paper, border shrink=0mm, landscape]
 
 \setlength{\parskip}{0em}
 \setlist[enumerate]{itemsep=0mm}
@@ -149,8 +152,15 @@ There are special mappings called \textbf{projections} for a cartesian product
         (x_1,...,x_n) &\mapsto x_i
     \end{split}\]
 The cartesian product of $n$ copies of a set $X$ is written in short as $X^n$\\
-
 $\forall n,m \geq 0$, $X^n\times X^m\xrightarrow{\sim} X^{n+m}; ((x_1,...,x_n),(x_{n+1},...,x_{n+m}))\mapsto(x_1,...,x_n,x_{n+1},x_{n+m})$
+
+\begin{example}[Examples of tuples]
+    \quad
+    \begin{itemize}
+        \item Vector spacse of $n$-tubles over $F$: $V = F^n$
+        \item Vector space as space around us
+    \end{itemize}
+\end{example}
 
 % Section 1.4
 \subsection{Vector Subspaces}
@@ -534,6 +544,10 @@ We call $\textbf{M}_\mathcal{B}^\mathcal{A}(f) = _\mathcal{B}[f]_\mathcal{A}$ th
         \item $a,b\neq 0 \Rightarrow ab \neq 0$
     \end{enumerate}
 \end{definition}
+
+\begin{prop}[Cancellation Law for Integral Domains]
+    Let $R$ be an integral domain and let $a,b,c \in R$. If $ab = ac \wedge a \neq 0 \Rightarrow b = c$
+\end{prop}
 
 \begin{prop}
     Let $m$ be a natural number. The $\mathbb{Z}/m\mathbb{Z}$ is an integral domain i.f.f. $m$ is prime
@@ -1128,8 +1142,9 @@ Iain (not Ian just to be clear) said he's not examing triangularisable. (Will FC
     \end{enumerate}
 \end{corollary}
 
-\begin{theorem}
-    Let $\vec{v_1},..., \vec{v_k}$ be a linearly independent vectors in an inner product space $V$. Then there exists an orthonormal family $\vec{w_1},... \vec{w_k}$ with the property for all $1 \leq i \leq k$: $$\vec{w_1} \in \mathbb{R}_{>0}\vec{v_i}+ \langle\vec{v_i-1,...,\vec{v_1}}\rangle$$
+\begin{theorem}[Gram-Schmit Process]
+    Let $\vec{v_1},..., \vec{v_k}$ be a linearly independent vectors in an inner product space $V$. Then there exists an orthonormal family $\vec{w_1},... \vec{w_k}$ with the property for all $1 \leq i \leq k$: $$\vec{w_i} \in \mathbb{R}_{>0}\vec{v_i}+ \langle\vec{v_i-1,...,\vec{v_1}}\rangle$$
+    Therefore, $\forall i \in [1,k]\in \mathbb{N} \exists \vec{\lambda} \text{ s.t. } \exists \vec{w_i} = \vec{v_i} - \sum_{j=1}^{i-1}\lambda_j \vec{v_j}$
 \end{theorem}
 
 % 5.3
@@ -1216,5 +1231,36 @@ Will not be incuded in  Exam yay
 % % 6.3
 % \subsection{The Proof of Jordan Normal Form}
 % I'd suggest reading the full notes from here...
+
+\newpage
+\section*{Quick References}
+\begin{itemize}
+    \item \textbf{Abelian Group}: For group in with operation $(A,*)$ to be abelian group, the following has to be fulfilled:
+        \begin{enumerate}
+            \item \textbf{Closure}: $\forall a,b \in A, a*b \in A$
+            \item \textbf{Associativity}: $\forall a,b,c \in A, (a*b)*c = a*(b*c)$
+            \item \textbf{Identity}: $\exists e \in A \text{ s.t. } e*a = a*e = a \forall a \in A$
+            \item \textbf{Inverse}: $\forall a \in A \exists a^{-1} \textbf{ s.t. } a^{-1}*a = a*a^{-1} = e$
+            \item \textbf{Communtativity}: $\forall a, b \in A, a*b = b*a$
+        \end{enumerate}
+    \item \textbf{Change of Basis}: for standard basis $A = \{\vec{v_1},...,\vec{v_n}\}$ and basis $B = \{(\sum_{i=1}^n{a_{i1}}\vec{w_i}),...,(\sum_{i=1}^n{a_{in}}\vec{w_i})\}$, $$_A[id]_B = (a_{ij})$$
+\end{itemize}
+
+\subsubsection*{The blah-morphism table}
+\begin{center}
+    \begin{tabular}{| c || c | c | c |}
+        \hline
+        blah-morphism & Linear? & Bijective? & $f:V \rightarrow V$?\\
+        \hline\hline
+        Homomorpgism & Yes & Not-required & Not-required\\
+        \hline
+        Isomorphism & Yes & Yes & Not-required\\
+        \hline
+        Endomorphism & Yes & Not-required & Yes \\
+        \hline
+        Automorphism & Yes & Yes & Yes \\
+        \hline 
+    \end{tabular}
+\end{center}
 
 \end{document}
