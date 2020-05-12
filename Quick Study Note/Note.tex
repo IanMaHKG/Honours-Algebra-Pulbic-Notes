@@ -8,13 +8,12 @@
 \usepackage{adjustbox}
 \usepackage{enumitem}
 \usepackage{mathtools}
-% \usepackage{fancyhdr}
-\usepackage[margin=0.20in]{geometry}
+\usepackage[margin=0.75in]{geometry}
 \usepackage{pgfpages}
 % % For shrinking 4 pages to 1
 % \pgfpagesuselayout{4 on 1}[a4paper, border shrink=0mm]
 % 2 in 1
-\pgfpagesuselayout{2 on 1}[a4paper, border shrink=0mm, landscape]
+% \pgfpagesuselayout{2 on 1}[a4paper, border shrink=0mm, landscape]
 
 \setlength{\parskip}{0em}
 \setlist[enumerate]{itemsep=0mm}
@@ -31,10 +30,6 @@
 
 \newtheorem{theorem}{THEOREM}[subsection]
 
-\DeclarePairedDelimiterX{\infdivx}[2]{(}{)}{%
-  #1\;\delimsize\|\;#2%
-}
-% \DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
 \newcommand{\norm}[1]{\lVert #1 \rVert}
 \newcommand{\uline}[1]{\rule[0pt]{#1}{0.4pt}}
 \newcommand{\trace}[1]{\text{tr}(#1)}
@@ -66,6 +61,7 @@
 
 \title{\coursename\\Quick Notes}
 \author{Ian S.W. Ma}
+\date{Spring 2020}
 
  
  
@@ -75,8 +71,8 @@
 %                         Start here
 % --------------------------------------------------------------
 \pagenumbering{gobble}
-% \tableofcontents
-% \newpage
+\tableofcontents
+\newpage
 
 \pagenumbering{arabic}
 \setcounter{page}{1}

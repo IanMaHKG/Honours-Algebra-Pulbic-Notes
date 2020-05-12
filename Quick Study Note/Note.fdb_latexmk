@@ -1,9 +1,9 @@
 # Fdb version 3
-["pdflatex"] 1588856832 "/home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.tex" "/home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.pdf" "Note" 1588856833
+["pdflatex"] 1589322802 "/home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.tex" "/home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.pdf" "Note" 1589322803
   "/etc/texmf/web2c/texmf.cnf" 1588438941 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/ian/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk" 1588439839 14040 eb065bfa625b4fe8c9dda8d2d5f14f84 ""
-  "/home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.aux" 1588856833 4285 91786017baff19607c0cff0b9e0bedba ""
-  "/home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.tex" 1588856832 67803 1ef13b69ba4fe161d8e7c8ceb670ddd9 ""
+  "/home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.aux" 1589322803 4286 ab02fb96fd6f7ba4db807b0cdf0d03bc ""
+  "/home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.tex" 1589322802 67675 669501a180c13c5297915c722345eac6 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -169,11 +169,13 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1583234869 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1588439167 128028 f533b797fba58d231669ea19e894e23e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1588439171 4811737 2fe44c98718b1a11fde28d7f4ed9a356 ""
-  "Note.aux" 1588856833 4285 91786017baff19607c0cff0b9e0bedba ""
-  "Note.tex" 1588856832 67803 1ef13b69ba4fe161d8e7c8ceb670ddd9 ""
+  "Note.aux" 1589322803 4286 ab02fb96fd6f7ba4db807b0cdf0d03bc ""
+  "Note.tex" 1589322802 67675 669501a180c13c5297915c722345eac6 ""
+  "Note.toc" 1589322803 2770 cac9a0cfc0162aa4d4d921597df2c713 ""
   (generated)
-  "Note.pdf"
   "/home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.pdf"
   "Note.aux"
-  "Note.log"
   "/home/ian/Documents/Honours-Algebra-Pulbic-Notes/Quick Study Note/Note.log"
+  "Note.pdf"
+  "Note.toc"
+  "Note.log"
